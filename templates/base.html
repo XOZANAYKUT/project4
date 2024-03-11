@@ -27,10 +27,10 @@
 <body class="d-flex flex-column h-100 main-bg">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent"> <!-- Background color set to transparent -->
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}">
-                <span class="brand text-dark">Culinary  Academy</span>
+            <a class="navbar-brand brand" href="{% url 'home' %}">
+                Culinary Academy <!-- Removed unnecessary span -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +42,6 @@
                         <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
                             href="{% url 'home' %}">Home</a>
                     </li>
-
                 </ul>
                 <span class="navbar-text text-muted">
                    

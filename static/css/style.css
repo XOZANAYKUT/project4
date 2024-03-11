@@ -32,12 +32,13 @@ body {
 .card {
     border: none;
     background-color: #ffffff; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease; 
+    
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Kartın hafif yükselme efekti */
+    transform: translateY(-7px); 
 }
 
 .image-container {
@@ -70,6 +71,7 @@ body {
     display: inline-block;
     height: 33vh;
     width: 100%;
+   
 }
 
 .masthead-text {
@@ -122,7 +124,7 @@ body {
 .btn-signup,
 .btn-edit {
     background-color: #188181;
-    color: #fff;
+    color: #1121ce;
 }
 
 .btn-signup:hover,
@@ -167,4 +169,9 @@ body {
 
 .approval {
     color: rgb(222, 146, 168);
+}
+.navbar {
+    background-color: #ffffff; 
+    border-bottom: 1px solid #dddddd; 
+    padding: 15px 0; 
 }
