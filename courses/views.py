@@ -5,4 +5,5 @@ from .models import Course
 
 class CourseList(generic.ListView):
     queryset = Course.objects.filter(status=1)
-    template_name = "course_list.html"
+    template_name = "courses/index.html"
+    paginate_by = 6
