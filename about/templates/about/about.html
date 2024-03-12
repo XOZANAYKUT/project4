@@ -1,22 +1,33 @@
 {% extends 'base.html' %}
+
 {% block content %}
 {% load static %}
+
 <div class="container mt-5">
     <div class="row">
-        <div class="col-4 text-center">
-            <img src="{% static 'images/about.jpg' %}" width="75%">
-        </div>
-        <div class="col-8">
-            <h2>{{ about.title }}</h2>
-            {{ about.content | safe }}
+        <div class="col-12 text-center">
+            <h1>{{ about.title }}</h1>
         </div>
     </div>
-    <div class="row">
-        <div class="col text-right">
-          <!-- Updated on field goes in here -->
-    
-          <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
+    <div class="row mt-4">
+        <div class="col-8 offset-2">
+            <div class="card p-4">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="{% static 'images/about.jpg' %}" class="img-fluid" alt="About Image">
+                    </div>
+                    <div class="col-6 d-flex align-items-center">
+                        <p>{{ about.content | safe }}</p>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>    
+    </div>
 </div>
+
 {% endblock content %}
