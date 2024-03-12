@@ -19,7 +19,7 @@
                                         By: {{ course.author }}</p>
                                 </div>
                             </div>
-                            <a href="#" class="course-link">
+                            <a href="{% url 'course_detail' course.slug %}" class="course-link">
                                 <h2 class="card-title">{{ course.title }}</h2>
                                 <p class="card-text">{{ course.excerpt }}</p>
                             </a>
