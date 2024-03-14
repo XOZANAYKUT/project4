@@ -24,9 +24,15 @@ def course_detail(request, slug):
 
     queryset = Course.objects.filter(status=1)
     course = get_object_or_404(queryset, slug=slug)
+    comments = course.comments.all().order_by("-created_on")
+    comment_count = course.comments.filter(approved=True).count()
 
     return render(
         request,
         "courses/course_detail.html",
-        {"course": course},
-    )
+        {
+            "course": course,
+            "comments": comments,
+            "comment_count": comment_count,
+        },
+ )
