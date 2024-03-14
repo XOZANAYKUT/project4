@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic
 from .models import Course
 from django.contrib import messages
@@ -24,6 +24,7 @@ def course_detail(request, slug):
     :template:courses/course_detail.html
     """
 
+    
     queryset = Course.objects.filter(status=1)
     course = get_object_or_404(queryset, slug=slug)
     comments = course.comments.all().order_by("-created_on")
@@ -37,10 +38,8 @@ def course_detail(request, slug):
             comment.author = request.user
             comment.course = course
             comment.save()
-            messages.add_message(
-                request, messages.SUCCESS,
-                'Comment submitted and awaiting approval'
-            )
+            messages.success(request, 'Comment submitted and awaiting approval')
+            return redirect('course_detail', slug=slug)  # Burada sayfayı tekrar yükleyerek formun temizlenmesini sağlıyoruz.
 
     return render(
         request,
