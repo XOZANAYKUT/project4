@@ -18,12 +18,13 @@
     </div>
     <div class="row justify-content-center">
         <div class="col-12 col-md-6 my-5">
-            <h2>Let's collaborate!</h2>
-            <p>I believe in the power of shared knowledge and collective effort.
-                Whether you have a project in mind, wish to co-author
-                an article, or simply want to brainstorm some ideas,
-                I'm excited to hear from you. Fill out the form
-                and we can get the ball rolling!</p>
+            <h2>Let's create culinary magic together!</h2>
+            <p>Here at Culinary Academy, we live and breathe the art of cooking. We find sheer delight in sharing our
+                passion with fellow food enthusiasts like you. Whether you're concocting a tantalizing new recipe,
+                delving into advanced culinary techniques, or looking to collaborate on an exciting culinary endeavor,
+                we're here to make it happen.Let's transform your culinary dreams into delectable realities! Share your
+                ideas, projects, or simply reach out to brainstorm with us. Take a moment to fill out the form below,
+                and let's embark on this culinary adventure together!</p>
 
             <!-- add your form here -->
             <form id="collaborate-form" method="post">
@@ -34,7 +35,8 @@
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email address:</label>
-                    <input type="email" class="form-control" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <input type="email" class="form-control" id="email" name="email" required
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                     <div class="invalid-feedback">Please enter a valid email address.</div>
                 </div>
                 <div class="mb-3">
@@ -45,11 +47,11 @@
             </form>
             <!-- Form errors -->
             {% if messages %}
-                {% for message in messages %}
-                    <div class="alert alert-{{ message.tags }}" role="alert">
-                        {{ message }}
-                    </div>
-                {% endfor %}
+            {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}" role="alert">
+                {{ message }}
+            </div>
+            {% endfor %}
             {% endif %}
         </div>
     </div>
@@ -59,7 +61,7 @@
 <script>
     const form = document.getElementById('collaborate-form');
 
-    form.addEventListener('submit', function(event) {
+    form.addEventListener('submit', function (event) {
         event.preventDefault();
 
         simulateSuccess();
@@ -90,4 +92,3 @@
     }
 </script>
 {% endblock content %}
-
