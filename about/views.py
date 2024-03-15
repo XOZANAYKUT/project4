@@ -1,7 +1,6 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from .models import About
-# Create your views here.
-
 
 def about_me(request):
     """
@@ -14,3 +13,13 @@ def about_me(request):
         "about/about.html",
         {"about": about},
     )
+
+def submit_form(request):
+    """
+    Handles form submission
+    """
+    if request.method == 'POST':
+        # Form verilerini işleme kodları buraya gelecek
+        return HttpResponse('Form submitted successfully!')
+    else:
+        return HttpResponse('This URL only accepts POST requests.')
