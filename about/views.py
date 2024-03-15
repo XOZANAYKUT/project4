@@ -1,14 +1,19 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, redirect
+from django.contrib import messages
 from .models import About
 from .forms import CollaborateForm
 
 def about_me(request):
-    """
-    Renders the About page
-    """
-    about = About.objects.all().order_by('-updated_on').first()
-    collaborate_form = CollaborateForm()
+    about = About.objects.all().order_by('-updated_on').first()  
+
+    if request.method == "POST":
+        collaborate_form = CollaborateForm(data=request.POST)
+        if collaborate_form.is_valid():
+            collaborate_form.save()
+            messages.success(request, "Collaboration request received! I endeavour to respond within 2 working days.")
+            return redirect('about') 
+    else:
+        collaborate_form = CollaborateForm()
 
     return render(
         request,
@@ -19,12 +24,13 @@ def about_me(request):
         },
     )
 
-def submit_form(request):
-    """
-    Handles form submission
-    """
+def submit_collaborate_request(request):
     if request.method == 'POST':
-        # Form verilerini işleme kodları buraya gelecek
-        return HttpResponse('Form submitted successfully!')
-    else:
-        return HttpResponse('This URL only accepts POST requests.')
+        collaborate_form = CollaborateForm(request.POST)
+        if collaborate_form.is_valid():
+            collaborate_form.save()
+            messages.success(request, 'Collaboration request received! I endeavour to respond within 2 working days.')
+            return redirect('about')
+        else:
+            messages.error(request, 'Collaboration request form is not valid!')
+    return render(request, 'about/about.html', {'collaborate_form': CollaborateForm()})

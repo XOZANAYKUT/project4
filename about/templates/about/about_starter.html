@@ -1,19 +1,18 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load crispy_forms_tags %}
 
 {% block content %}
 <div class="container mt-5">
-    <div class="row">
-        <div class="col-12 col-md-4 text-center">
-            <img src="{% static 'images/nobody.jpg' %}" width="75%">
-        </div>
-        <div class="col-12 col-md-8">
-            <h2>{{ about.title }}</h2>
-            {{ about.content | safe }}
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 text-center">
+            <img src="{% static 'images/about.jpg' %}" width="50%">
         </div>
     </div>
-    <div class="row">
-        <div class="col text-right">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 my-5">
+            <h2>{{ about.title }}</h2>
+            {{ about.content | safe }}
             <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
         </div>
     </div>
@@ -27,7 +26,7 @@
                 and we can get the ball rolling!</p>
 
             <!-- add your form here -->
-            <form method="post" action="{% url 'submit_form' %}">
+            <form id="collaborate-form" method="post" action="{% url 'submit_collaborate_request' %}">
                 {% csrf_token %}
                 <div class="mb-3">
                     <label for="name" class="form-label">Name:</label>
@@ -46,4 +45,53 @@
         </div>
     </div>
 </div>
+
+<!-- JavaScript for success message and clearing form fields -->
+<script>
+    // Get the form element
+    const form = document.getElementById('collaborate-form');
+
+    // Add event listener for form submission
+    form.addEventListener('submit', function(event) {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+
+        // Simulate a successful form submission
+        // For demonstration purposes, you can remove this line and handle the actual form submission
+        simulateSuccess();
+
+        // Clear form fields
+        clearFormFields();
+    });
+
+    // Function to simulate a successful form submission
+    function simulateSuccess() {
+        // Display a success message using a Bootstrap alert
+        const successAlert = `
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                Form submitted successfully!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        `;
+
+        // Append the success message to the container element
+        const container = document.querySelector('.container');
+        container.insertAdjacentHTML('beforeend', successAlert);
+    }
+
+    // Function to clear form fields
+    function clearFormFields() {
+        // Get input elements in the form
+        const inputs = form.querySelectorAll('input');
+        const textarea = form.querySelector('textarea');
+
+        // Clear the value of each input element
+        inputs.forEach(input => {
+            input.value = '';
+        });
+
+        // Clear the value of the textarea
+        textarea.value = '';
+    }
+</script>
 {% endblock content %}

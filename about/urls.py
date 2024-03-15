@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     path('', views.about_me, name='about'),
-    path('submit_form/', views.submit_form, name='submit_form'), 
+    path('submit_collaborate_request/', views.submit_collaborate_request, name='submit_collaborate_request'),  #
 ]
