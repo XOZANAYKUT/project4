@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
 
 <div class="container-fluid">
@@ -13,6 +13,12 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
+                                {% if "placeholder" in course.featured_image.url %}
+                                <img class="card-img-top" src="{% static 'images/mitoloji.jpg' %}"
+                                    alt="placeholder image">
+                                {% else %}
+                                <img class="card-img-top" src="{{ course.featured_image.url }}" alt="{{ course.title }}">
+                                {% endif %}
                                 <div class="image-flash">
                                     <p class="By">
                                         By: {{ course.author }}</p>

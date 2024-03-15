@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 DURATION_CHOICES = (
     ('short_term', 'Short-term'),
@@ -14,8 +15,9 @@ class Course(models.Model):
     title = models.CharField(max_length=200, unique=True, verbose_name="Title")
     slug = models.SlugField(max_length=200, unique=True, verbose_name="URL Tag")
     author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="courses_posts", default=1
-    )  # By default, assign a user with user ID 1.
+        User, on_delete=models.CASCADE, related_name="courses_posts"
+    )  
+    featured_image = CloudinaryField('image', default='placeholder')
     content = models.TextField(verbose_name="Course Content")
     date = models.DateField(verbose_name="Course Date")
     duration = models.CharField(max_length=20, choices=DURATION_CHOICES, verbose_name="Course Duration")

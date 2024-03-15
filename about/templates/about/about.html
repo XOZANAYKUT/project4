@@ -47,48 +47,23 @@
             </form>
             <!-- Form errors -->
             {% if messages %}
-            {% for message in messages %}
-            <div class="alert alert-{{ message.tags }}" role="alert">
-                {{ message }}
-            </div>
-            {% endfor %}
+                <div id="message-container">
+                    {% for message in messages %}
+                        <div class="alert alert-{{ message.tags }}" role="alert">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                </div>
+                <script>
+                    // Remove messages after 3 seconds
+                    setTimeout(function() {
+                        document.getElementById("message-container").innerHTML = "";
+                    }, 3000);
+                </script>
             {% endif %}
         </div>
     </div>
 </div>
 
-<!-- JavaScript for success message and clearing form fields -->
-<script>
-    const form = document.getElementById('collaborate-form');
-
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
-
-        simulateSuccess();
-        clearFormFields();
-    });
-
-    function simulateSuccess() {
-        const successAlert = `
-            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                Form submitted successfully!
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-        `;
-
-        const container = document.querySelector('.container');
-        container.insertAdjacentHTML('beforeend', successAlert);
-    }
-
-    function clearFormFields() {
-        const inputs = form.querySelectorAll('input');
-        const textarea = form.querySelector('textarea');
-
-        inputs.forEach(input => {
-            input.value = '';
-        });
-
-        textarea.value = '';
-    }
 </script>
 {% endblock content %}
