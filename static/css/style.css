@@ -1,3 +1,4 @@
+User
 /* Global Styles */
 body {
     background-color: #F9FAFC;
@@ -143,14 +144,14 @@ body {
 }
 
 .btn-like {
-    color: #e84610;
+    color: #1121ce;
     border: none;
     background: transparent;
 }
 
 .btn-delete {
-    color: #fff;
-    background: #e84610;
+    color:#1121ce;
+    background: #252221;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -159,12 +160,12 @@ body {
 
 .btn-delete:hover,
 .btn-delete:active {
-    background: #ff0000;
+    background: #1121ce;
 }
 
 /* Miscellaneous Styles */
 .faded {
-    color: #acafaf;
+    color:#252221;
 }
 
 .approval {
