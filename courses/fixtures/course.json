@@ -1,114 +1,122 @@
+
 [
     {
-        "model": "courses.course",
-        "pk": null,
-        "fields": {
-            "title": "Molecular Gastronomy",
-            "slug": "molecular-gastronomy",
-            "author": 1,
-            "content": "<p>Molecular gastronomy is a subdiscipline of food science that seeks to investigate the physical and chemical transformations of ingredients that occur in cooking. Its program includes three axes, as cooking was recognized to have three components, which are social, artistic, and technical. Molecular cuisine is a modern style of cooking, and takes advantage of many technical innovations from the scientific disciplines.</p>",
-            "date": "2023-07-14",
-            "duration": "long_term",
-            "status": 1,
-            "excerpt": "Explore the fascinating world of molecular gastronomy and discover the science behind modern cuisine.",
-            "created_on": "2023-07-14T13:58:53.884Z",
-            "updated_on": "2023-09-13T09:43:19.754Z"
-        }
-    },
-    {
-        "model": "courses.course",
-        "pk": null,
-        "fields": {
-            "title": "Fusion Cuisine",
-            "slug": "fusion-cuisine",
-            "author": 1,
-            "content": "<p>Fusion cuisine is cuisine that combines elements of different culinary traditions. Cuisines of this type are not categorized according to any one particular cuisine style and have played a part in a number of innovations.</p>",
-            "date": "2023-07-14",
-            "duration": "short_term",
-            "status": 1,
-            "excerpt": "Experience the exciting blend of flavors and techniques in fusion cuisine.",
-            "created_on": "2023-07-14T13:58:53.884Z",
-            "updated_on": "2023-09-13T09:43:19.754Z"
-        }
-    },
-    {
-        "model": "courses.course",
-        "pk": null,
-        "fields": {
-            "title": "Cheese Making",
-            "slug": "cheese-making",
-            "author": 1,
-            "content": "<p>Explore the art and science of cheese making in our hands-on workshop. Learn about the different types of cheese, milk selection, fermentation, and aging processes. Get ready to impress your friends and family with your homemade cheese creations!</p>",
-            "date": "2023-07-14",
-            "duration": "short_term",
-            "status": 1,
-            "excerpt": "Discover the joy of making cheese from scratch with our expert-led workshop.",
-            "created_on": "2023-07-14T13:58:53.884Z",
-            "updated_on": "2023-09-13T09:43:19.754Z"
-        }
-    },
-    {
-        "model": "courses.course",
-        "pk": null,
-        "fields": {
-            "title": "Basic Pastry Training",
-            "slug": "basic-pastry-training",
-            "author": 1,
-            "content": "<p>Join us for a hands-on pastry training course where you'll learn the foundational skills and techniques of pastry making. From dough preparation to baking and decorating, this course covers it all.</p>",
-            "date": "2023-07-14",
-            "duration": "short_term",
-            "status": 1,
-            "excerpt": "Delve into the art of pastry making with our introductory training course.",
-            "created_on": "2023-07-14T13:58:53.884Z",
-            "updated_on": "2023-09-13T09:43:19.754Z"
-        }
-    },
-    {
-        "model": "courses.course",
-        "pk": null,
-        "fields": {
-            "title": "Chocolate Workshop",
-            "slug": "chocolate-workshop",
-            "author": 1,
-            "content": "<p>Indulge in the world of chocolate with our immersive workshop. Learn about the history of chocolate, the chocolate-making process, and create your own delicious chocolate creations.</p>",
-            "date": "2023-07-14",
-            "duration": "short_term",
-            "status": 1,
-            "excerpt": "Discover the art and science of chocolate making in our hands-on workshop.",
-            "created_on": "2023-07-14T13:58:53.884Z",
-            "updated_on": "2023-09-13T09:43:19.754Z"
-        }
-    },
-    {
-        "model": "courses.course",
-        "pk": null,
-        "fields": {
-            "title": "Basic Pastry and 3D Cake Art Course",
-            "slug": "basic-pastry-and-3d-cake-art-course",
-            "author": 1,
-            "content": "<p>Take your pastry skills to the next level with our comprehensive course on basic pastry and 3D cake art. Learn how to create stunning 3D cake designs and master advanced pastry techniques.</p>",
-            "date": "2023-07-14",
-            "duration": "long_term",
-            "status": 1,
-            "excerpt": "Elevate your pastry skills with our advanced training in basic pastry and 3D cake art.",
-            "created_on": "2023-07-14T13:58:53.884Z",
-            "updated_on": "2023-09-13T09:43:19.754Z"
-        }
-    },
-    {
-        "model": "courses.course",
-        "pk": null,
-        "fields": {
-            "title": "Gastronomy and Mythology",
-            "slug": "gastronomy-and-mythology",
-            "author": 1,
-            "content": "<p>Explore the intersection of gastronomy and mythology in this unique course. Discover the cultural and historical significance of food through the lens of mythology, and uncover the myths and legends behind traditional dishes.</p>",
-            "date": "2023-07-14",
-            "duration": "long_term",
-            "status": 1,
-            "excerpt": "Embark on a culinary journey through the myths and legends of gastronomy.",
-            "created_on": "2023-07-14T13:58:53.884Z",
-            "updated_on": "2023-09-13T09:43:19.754Z"
-        }
+    "model": "courses.course",
+    "pk": null,
+    "fields": {
+    "title": "Molecular Gastronomy",
+    "slug": "molecular-gastronomy",
+    "author": 1,
+    "content": "<p>Molecular gastronomy stands as a fascinating subdiscipline within food science, delving into the intricate physical and chemical transformations that unfold during the cooking process. This innovative field operates on a framework consisting of three essential components, aligning with the multifaceted nature of cooking itself: social, artistic, and technical. At its core, molecular gastronomy embraces cooking not merely as a means of sustenance, but as a rich tapestry woven from the threads of social interaction, artistic expression, and technical precision. By recognizing these three axes, practitioners of molecular gastronomy aim to unravel the complex interplay between ingredients, techniques, and the human experience of dining. As a modern culinary style, molecular cuisine capitalizes on the advancements of scientific disciplines, leveraging technical innovations to push the boundaries of traditional cooking. From the precise manipulation of textures and temperatures to the exploration of novel flavor combinations, molecular cuisine offers a platform for chefs to experiment, innovate, and redefine the culinary landscape. By embracing the principles of molecular gastronomy, chefs can unlock a world of culinary possibilities, blurring the lines between science and art to create dishes that are as visually stunning as they are delicious. With each bite, diners embark on a sensory journey that transcends the confines of traditional cooking, inviting them to explore new realms of taste, texture, and experience.</p>",
+    "date": "2023-07-14",
+    "duration": "long_term",
+    "status": 1,
+    "excerpt": "Explore the fascinating world of molecular gastronomy and discover the science behind modern cuisine.",
+    "created_on": "2023-07-14T13:58:53.884Z",
+    "updated_on": "2023-09-13T09:43:19.754Z"
     }
-]
+    },
+    {
+    "model": "courses.course",
+    "pk": null,
+    "fields": {
+    "title": "Fusion Cuisine",
+    "slug": "fusion-cuisine",
+    "author": 1,
+    "content": "<p>Fusion cuisine is a culinary approach that seamlessly blends elements from diverse culinary traditions, resulting in innovative and exciting flavor combinations. Unlike traditional cuisines that adhere to specific styles, fusion cuisine transcends categorization, drawing inspiration from a multitude of culinary influences to create something entirely new and unique. This culinary style has sparked numerous innovations, pushing the boundaries of traditional cooking and challenging conventional notions of flavor pairings and ingredient combinations. By marrying ingredients, techniques, and cultural traditions from different parts of the world, fusion cuisine offers a fresh and dynamic approach to culinary creativity. From Asian-inspired tacos to Mediterranean-infused sushi rolls, fusion cuisine delights the palate with unexpected twists and harmonious fusions of flavors. It celebrates the diversity of global culinary traditions while paving the way for new and exciting culinary experiences. In the world of fusion cuisine, chefs are limited only by their imagination, resulting in a vibrant and ever-evolving culinary landscape that continues to inspire and delight food lovers around the globe. Whether exploring fusion restaurants or experimenting in the kitchen, the fusion cuisine experience promises to be a journey of discovery and delight.</p>",
+    "date": "2023-07-14",
+    "duration": "short_term",
+    "status": 1,
+    "excerpt": "Experience the exciting blend of flavors and techniques in fusion cuisine.",
+    "created_on": "2023-07-14T13:58:53.884Z",
+    "updated_on": "2023-09-13T09:43:19.754Z"
+    }
+    },
+    {
+    "model": "courses.course",
+    "pk": null,
+    "fields": {
+    "title": "Cheese Making",
+    "slug": "cheese-making",
+    "author": 1,
+    "content": "<p>Immerse yourself in the fascinating world of cheese-making with our interactive workshop, where you'll uncover the art and science behind this beloved culinary craft. From understanding the diverse array of cheese types to mastering the intricacies of milk selection, fermentation, and aging processes, this hands-on experience is designed to empower you with the knowledge and skills needed to create your own delicious cheeses at home. Throughout the workshop, you'll embark on a journey of discovery, guided by experienced cheese makers who will share their expertise and insights every step of the way. Gain a deeper understanding of the fundamental principles of cheese making, from selecting the right milk and starter cultures to mastering the techniques of curd formation and proper aging. With practical demonstrations and interactive activities, you'll have the opportunity to put your newfound knowledge into practice, as you craft your own artisanal cheeses under the guidance of our expert instructors. Whether you're intrigued by the tangy notes of a soft cheese or the robust flavors of an aged cheddar, you'll learn how to tailor your cheese making process to achieve the flavors and textures you desire.  By the end of the workshop, you'll be equipped with the confidence and skills to impress your friends and family with your homemade cheese creations. Whether you're hosting a dinner party or simply seeking to elevate your culinary repertoire, this workshop promises to inspire and delight cheese enthusiasts of all levels. Join us as we embark on a delicious journey into the world of cheese making, where the possibilities are as endless as the flavors you'll create.</p>",
+    "date": "2023-07-14",
+    "duration": "short_term",
+    "status": 1,
+    "excerpt": "Discover the joy of making cheese from scratch with our expert-led workshop.",
+    "created_on": "2023-07-14T13:58:53.884Z",
+    "updated_on": "2023-09-13T09:43:19.754Z"
+    }
+    },
+    {
+    "model": "courses.course",
+    "pk": null,
+    "fields": {
+    "title": "Basic Pastry Training",
+    "slug": "basic-pastry-training",
+    "author": 1,
+    "content": "<p>Join us for an immersive and hands-on pastry training course designed to help you master the essential skills and techniques of basic pastry making. From the meticulous art of dough preparation to the intricate processes of baking and decorating, our comprehensive program provides everything you need to embark on your pastry-making journey with confidence and expertise. Throughout the course, our experienced instructors will offer personalized guidance and support as you delve into the foundational principles of pastry making. You'll uncover the secrets to creating flawless doughs, achieving the perfect balance of ingredients, and refining your techniques to ensure optimal texture and flavor in every pastry you create.With an emphasis on practical learning, you'll have ample opportunities to apply your newfound skills in a supportive and encouraging environment. Whether you're shaping delicate croissants, mastering the art of puff pastry lamination, or adorning your creations with intricate decorative finishes, our instructors will be there every step of the way to offer feedback and assistance. By the conclusion of the course, you'll emerge with a newfound sense of confidence and proficiency, equipped to tackle a diverse array of pastry recipes with ease. Whether your aspirations lie in pursuing a career in the culinary arts or simply delighting your friends and family with homemade treats, our course empowers you with the knowledge and skills necessary to succeed. Don't let this opportunity pass you by. Join us for an unforgettable journey into the world of basic pastry making, where you'll unlock your creativity and discover the joy of crafting delicious pastries from scratch.</p>",
+    "date": "2023-07-14",
+    "duration": "short_term",
+    "status": 1,
+    "excerpt": "Delve into the art of pastry making with our introductory training course.",
+    "created_on": "2023-07-14T13:58:53.884Z",
+    "updated_on": "2023-09-13T09:43:19.754Z"
+    }
+    },
+    {
+    "model": "courses.course",
+    "pk": null,
+    "fields": {
+    "title": "Chocolate Workshop",
+    "slug": "chocolate-workshop",
+    "author": 1,
+    "content": "<p>Dive into the tantalizing world of chocolate with our immersive workshop. Delve into the rich history of this beloved treat, uncover the secrets of the chocolate-making process, and unleash your creativity as you craft your own delectable chocolate creations. In this workshop, you'll embark on a journey through the fascinating story of chocolate, tracing its origins from ancient civilizations to its modern-day status as a global indulgence. You'll discover the cultural significance of chocolate and its evolution over time, gaining a deeper appreciation for this cherished delicacy. As you explore the chocolate-making process, you'll learn the artistry and science behind transforming cocoa beans into luxurious chocolate bars. From roasting and grinding to tempering and molding, you'll gain hands-on experience with each step of the process, unlocking the secrets to creating smooth, velvety chocolate from scratch. But the true highlight of the workshop lies in the opportunity to unleash your imagination and create your own chocolate masterpieces. Under the guidance of our expert chocolatiers, you'll experiment with different flavors, textures, and decorations to craft personalized chocolates that reflect your unique tastes and preferences. Whether you're a passionate chocolate enthusiast or a curious beginner, this workshop offers a deliciously indulgent experience for chocolate lovers of all levels. Join us as we celebrate the magic of chocolate and embark on a sweet journey of discovery and delight.</p>",
+    "date": "2023-07-14",
+    "duration": "short_term",
+    "status": 1,
+    "excerpt": "Discover the art and science of chocolate making in our hands-on workshop.",
+    "created_on": "2023-07-14T13:58:53.884Z",
+    "updated_on": "2023-09-13T09:43:19.754Z"
+    }
+    },
+    {
+    "model": "courses.course",
+    "pk": null,
+    "fields": {
+    "title": "3D Cake Art Course",
+    "slug": "3d-cake-art-course",
+    "author": 1,
+    "content": "<p>Elevate your pastry skills to new heights with our comprehensive course on basic pastry and mesmerizing 3D cake art. Immerse yourself in the world of confectionery craftsmanship as you unlock the secrets behind creating breathtaking 3D cake designs. Throughout this course, we'll guide you through the fundamentals of pastry making, starting with perfecting the art of dough preparation and progressing to mastering the delicate balance of flavors and textures. But the true highlight of our program lies in the captivating journey into the realm of 3D cake art. Learn how to transform ordinary cakes into extraordinary works of edible art. From sculpting intricate shapes to mastering the art of fondant modeling, you'll acquire the skills and techniques needed to bring your most fantastical cake creations to life. Whether you're a novice baker eager to expand your repertoire or a seasoned pastry chef looking to refine your craft, this course caters to all skill levels. With step-by-step guidance from our expert instructors, you'll be amazed at how swiftly you can master the art of creating show-stopping 3D cake designs that are guaranteed to dazzle any audience. Join us on this delectable journey and unlock the secrets to achieving pastry perfection and awe-inspiring 3D cake art. Whether you aspire to launch your own bakery or simply desire to impress your loved ones with your culinary creations, our course equips you with the skills and confidence necessary to take your pastry expertise to new heights.</p>",
+    "date": "2023-07-14",
+    "duration": "long_term",
+    "status": 1,
+    "excerpt": "Take your pastry skills to the next level with our advanced 3D cake art workshop. Delve into the world of intricate cake sculpting and masterful fondant modeling as you elevate your creations to new heights of artistry and craftsmanship.",
+    "created_on": "2023-07-14T13:58:53.884Z",
+    "updated_on": "2023-09-13T09:43:19.754Z"
+    }
+    },
+    {
+    "model": "courses.course",
+    "pk": null,
+    "fields": {
+    "title": "Gastronomy and Mythology",
+    "slug": "gastronomy-and-mythology",
+    "author": 1,
+    "content": "<p>Embark on an extraordinary journey that delves into the fascinating intersection of gastronomy and mythology in this unique and immersive course. Prepare to be transported through time and across cultures as we unravel the intricate relationship between food and folklore, exploring the depths of cultural and historical significance embedded within the culinary traditions of civilizations past and present. In this course, we will delve into the captivating stories and legends that swirl around traditional dishes, uncovering the myths that have shaped the way we perceive and consume food. From the mythical origins of ingredients to the rituals and symbolism surrounding meals, each bite will be infused with layers of meaning and ancient wisdom waiting to be discovered. As we journey through the realms of mythology, we will uncover the symbolic significance of food in various cultures, from the Greek ambrosia of the gods to the symbolic feasts of Norse mythology. We will explore how food rituals have been used to honor deities, commemorate important events, and connect communities across time and space. Through a blend of lectures, discussions, and hands-on experiences, participants will gain a deeper understanding of the cultural, social, and spiritual dimensions of food. We will examine how myths and legends have influenced culinary practices, from the creation of recipes to the design of dining spaces, and explore how food stories have been preserved and passed down through generations. From the epic banquets of ancient civilizations to the humble family meals of today, this course will provide a holistic perspective on the role of food in shaping human culture and identity. By the end of our journey, participants will have developed a newfound appreciation for the stories behind the dishes we eat, and a deeper understanding of the ways in which mythology continues to shape our relationship with food and the world around us. Join us as we embark on this epic culinary quest, where every meal is a feast for the senses and a celebration of the human spirit.</p>",
+    "date": "2023-07-14",
+    "duration": "long_term",
+    "status": 1,
+    "excerpt": "Embark on a culinary journey through the myths and legends of gastronomy.",
+    "created_on": "2023-07-14T13:58:53.884Z",
+    "updated_on": "2023-09-13T09:43:19.754Z"
+    }
+    }
+    ]
+    
+    
+    
+    
+    
+    
+    
