@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block search %}
+{% for course in courses %}
+<a href="{% url 'course_detail' course.slug %}" class="course-link">
+    <h2 class="card-title course-title">{{ course.title }}</h2>
+</a>
+{% empty %}
+    <p>No results found.</p>
+{% endfor %}
+{% endblock %}

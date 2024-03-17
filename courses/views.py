@@ -75,3 +75,8 @@ def course_detail(request, slug):
             "comment_form": comment_form,
         },
     )
+    
+def search_results(request):
+    query = request.GET.get('q')
+    courses = Course.objects.filter(title__icontains=query)
+    return render(request, 'courses/search_results.html', {'courses': courses})
