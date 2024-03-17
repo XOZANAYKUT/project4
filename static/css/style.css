@@ -1,4 +1,3 @@
-User
 /* Global Styles */
 body {
     background-color: #F9FAFC;
@@ -63,11 +62,11 @@ body {
     position: relative;
     display: inline-block;
     height: 33vh;
-    width: 50%;
+    width: 100%;
 }
 
 .masthead-text {
-    background-color: #487c6d;
+    background-color: #445261;
     color: #101463;
     position: relative;
 }
@@ -81,10 +80,10 @@ body {
     content: "";
     position: absolute;
     top: 0;
-    right: 60%;
+    right: 90%;
     height: 100%;
     width: 150%;
-    background: #0edbae;
+    background: #445261;
     transform: skew(15deg);
     z-index: 100;
 }
@@ -144,14 +143,14 @@ body {
 }
 
 .btn-like {
-    color: #1121ce;
+    color: #e84610;
     border: none;
     background: transparent;
 }
 
 .btn-delete {
-    color:#1121ce;
-    background: #252221;
+    color: #fff;
+    background: #e84610;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -160,12 +159,12 @@ body {
 
 .btn-delete:hover,
 .btn-delete:active {
-    background: #1121ce;
+    background: #ff0000;
 }
 
 /* Miscellaneous Styles */
 .faded {
-    color:#252221;
+    color: #acafaf;
 }
 
 .approval {
