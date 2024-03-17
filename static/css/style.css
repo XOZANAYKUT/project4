@@ -63,11 +63,11 @@ body {
     position: relative;
     display: inline-block;
     height: 33vh;
-    width: 100%;
+    width: 50%;
 }
 
 .masthead-text {
-    background-color: #445261;
+    background-color: #487c6d;
     color: #101463;
     position: relative;
 }
@@ -81,10 +81,10 @@ body {
     content: "";
     position: absolute;
     top: 0;
-    right: 90%;
+    right: 60%;
     height: 100%;
     width: 150%;
-    background: #445261;
+    background: #0edbae;
     transform: skew(15deg);
     z-index: 100;
 }
