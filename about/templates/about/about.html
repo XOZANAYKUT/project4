@@ -45,22 +45,7 @@
                 </div>
                 <button type="submit" class="btn btn-secondary">Submit</button>
             </form>
-            <!-- Form errors -->
-            {% if messages %}
-                <div id="message-container">
-                    {% for message in messages %}
-                        <div class="alert alert-{{ message.tags }}" role="alert">
-                            {{ message }}
-                        </div>
-                    {% endfor %}
-                </div>
-                <script>
-                    // Remove messages after 3 seconds
-                    setTimeout(function() {
-                        document.getElementById("message-container").innerHTML = "";
-                    }, 3000);
-                </script>
-            {% endif %}
+            
         </div>
     </div>
 </div>
