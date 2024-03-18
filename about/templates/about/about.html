@@ -7,9 +7,9 @@
     <div class="row justify-content-center">
         <div class="col-12 col-md-8 text-center">
             {% if "placeholder" in about.profile_image.url %}
-                <img src="{% static 'images/mitoloji.jpg' %}" width="75%" alt="placeholder image">
+            <img src="{% static 'images/mitoloji.jpg' %}" width="75%" alt="placeholder image">
             {% else %}
-                <img src="{{ about.profile_image.url }}" width="75%" alt="{{ about.title }}">
+            <img src="{{ about.profile_image.url }}" width="75%" alt="{{ about.title }}">
             {% endif %}
         </div>
     </div>
@@ -26,7 +26,7 @@
             <p>Here at Culinary Academy, we live and breathe the art of cooking. We find sheer delight in sharing our
                 passion with fellow food enthusiasts like you. Whether you're concocting a tantalizing new recipe,
                 delving into advanced culinary techniques, or looking to collaborate on an exciting culinary endeavor,
-                we're here to make it happen.Let's transform your culinary dreams into delectable realities! Share your
+                we're here to make it happen. Let's transform your culinary dreams into delectable realities! Share your
                 ideas, projects, or simply reach out to brainstorm with us. Take a moment to fill out the form below,
                 and let's embark on this culinary adventure together!</p>
 
@@ -49,8 +49,8 @@
                 </div>
                 <button type="submit" class="btn btn-secondary">Submit</button>
             </form>
-            
         </div>
     </div>
 </div>
+<link rel="stylesheet" href="{% static 'css/custom.css' %}">
 {% endblock content %}

@@ -12,13 +12,13 @@
 <head>
     <title>Culinary Academy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-     <!-- favicon -->
+    <!-- favicon -->
     <link type="image/png" sizes="16x16" rel="icon" href="{% static 'favicon/icons8-chef-16.png' %}">
     <!-- Google Fonts CSS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
-     
+
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
@@ -33,68 +33,69 @@
 
 <body class="d-flex flex-column h-100 main-bg">
 
-   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="{% url 'home' %}">
-            <img src="{% static 'images/logo.png' %}" alt="Culinary Academy Logo" width="40" height="40">
-            Culinary Academy
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link {% if request.path == home_url %}active{% endif %}"
-                        href="{% url 'home' %}">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {% if request.path == about_url %}active{% endif %}"
-                        href="{% url 'about' %}">About</a>
-                </li>
-                <li class="nav-item">
-                    <form class="d-flex" method="GET" action="{% url 'search_results' %}">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="q">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </li>
-                {% if user.is_authenticated %}
-                <li class="nav-item">
-                    <a class="nav-link {% if request.path == logout_url %}active{% endif %}"
-                        href="{% url 'account_logout' %}">Logout</a>
-                </li>
-                {% else %}
-                <li class="nav-item">
-                    <a class="nav-link {% if request.path == signup_url %}active{% endif %}"
-                        href="{% url 'account_signup' %}">Register</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {% if request.path == login_url %}active{% endif %}"
-                        href="{% url 'account_login' %}">Login</a>
-                </li>
-                {% endif %}
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <img src="{% static 'images/logo.png' %}" alt="Culinary Academy Logo" width="40" height="40">
+                Culinary Academy
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == home_url %}active{% endif %}"
+                            href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == about_url %}active{% endif %}"
+                            href="{% url 'about' %}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <form class="d-flex" method="GET" action="{% url 'search_results' %}">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                                name="q">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </li>
+                    {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == logout_url %}active{% endif %}"
+                            href="{% url 'account_logout' %}">Logout</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == signup_url %}active{% endif %}"
+                            href="{% url 'account_signup' %}">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == login_url %}active{% endif %}"
+                            href="{% url 'account_login' %}">Login</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
     <main class="flex-shrink-0 main-bg">
         <!-- Form errors -->
-            {% if messages %}
-                <div id="message-container">
-                    {% for message in messages %}
-                        <div class="alert alert-{{ message.tags }}" role="alert">
-                            {{ message }}
-                        </div>
-                    {% endfor %}
-                </div>
-                <script>
-                    // Remove messages after 3 seconds
-                    setTimeout(function() {
-                        document.getElementById("message-container").innerHTML = "";
-                    }, 3000);
-                </script>
-            {% endif %}
+        {% if messages %}
+        <div id="message-container">
+            {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}" role="alert">
+                {{ message }}
+            </div>
+            {% endfor %}
+        </div>
+        <script>
+            // Remove messages after 3 seconds
+            setTimeout(function () {
+                document.getElementById("message-container").innerHTML = "";
+            }, 3000);
+        </script>
+        {% endif %}
         <div class="container">
             <div class="row">
                 <div class="col text-end m-3">
