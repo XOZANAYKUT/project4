@@ -19,7 +19,7 @@ class Course(models.Model):
     )  
     featured_image = CloudinaryField('image', default='placeholder')
     content = models.TextField(verbose_name="Course Content")
-    date = models.DateField(verbose_name="Course Date")
+    date = models.DateField(verbose_name="Course Date", null=True)
     duration = models.CharField(max_length=20, choices=DURATION_CHOICES, verbose_name="Course Duration")
     created_on = models.DateTimeField(auto_now_add=True, verbose_name="Creation Date")
     status = models.IntegerField(choices=STATUS_CHOICES, default=0, verbose_name="Status")
