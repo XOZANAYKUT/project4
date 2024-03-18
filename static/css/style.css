@@ -10,18 +10,6 @@ body {
     color: #ff5733;
 }
 
-.light-bg {
-    background-color: #ffffff;
-}
-
-.dark-bg {
-    background-color: #071e37;
-}
-
-.main-bg {
-    background-color: #F9FAFC;
-}
-
 .card {
     border: none;
     background-color: #ffffff;
@@ -93,7 +81,6 @@ body {
     text-decoration: none;
     color: #445261;
     font-size: 1.2rem;
-    /* Link boyutu artırıldı */
 }
 
 .course-link:hover,
@@ -135,7 +122,6 @@ body {
     color: #171f63;
     text-decoration: none;
     font-size: 1.2rem;
-    /* Link boyutu artırıldı */
 }
 
 .link:hover,
@@ -183,16 +169,6 @@ body {
 .title-container {
     text-align: center;
     margin-bottom: 20px;
-}
-
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-
-.mySlides {
-    display: none;
 }
 
 .prev,

@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from django.utils import timezone
 
 DURATION_CHOICES = (
     ('short_term', 'Short-term'),
@@ -11,6 +12,7 @@ STATUS_CHOICES = (
     (0, "Draft"),
     (1, "Published")
 )
+
 class Course(models.Model):
     title = models.CharField(max_length=200, unique=True, verbose_name="Title")
     slug = models.SlugField(max_length=200, unique=True, verbose_name="URL Tag")
@@ -19,7 +21,7 @@ class Course(models.Model):
     )  
     featured_image = CloudinaryField('image', default='placeholder')
     content = models.TextField(verbose_name="Course Content")
-    date = models.DateField(verbose_name="Course Date", null=True)
+    date = models.DateField(default=timezone.now, verbose_name="Course Date")
     duration = models.CharField(max_length=20, choices=DURATION_CHOICES, verbose_name="Course Duration")
     created_on = models.DateTimeField(auto_now_add=True, verbose_name="Creation Date")
     status = models.IntegerField(choices=STATUS_CHOICES, default=0, verbose_name="Status")
@@ -48,4 +50,3 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.body} by {self.author}"
-               
