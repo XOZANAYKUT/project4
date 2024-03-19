@@ -90,24 +90,10 @@ body {
     background-color: #fff;
     color: #005f5f;
 }
-.link {
-    color: #171f63;
-    text-decoration: none;
-    font-size: 1.2rem;
-    /* Link boyutu artırıldı */
-}
 
-.link:hover,
-.link:active {
-    color: #445261;
-    text-decoration: underline;
-}
 
-.btn-like {
-    color: #e84610;
-    border: none;
-    background: transparent;
-}
+
+
 
 .btn-delete {
     color: #fff;
@@ -139,11 +125,6 @@ body {
 }
 
 /* Title Style */
-.title-container {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 
 img {
     vertical-align: middle;
