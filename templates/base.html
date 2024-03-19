@@ -89,8 +89,12 @@
             </div>
             {% endfor %}
         </div>
-       
-       
+        <script>
+            // Remove messages after 3 seconds
+            setTimeout(function () {
+                document.getElementById("message-container").innerHTML = "";
+            }, 3000);
+        </script>
         {% endif %}
         <div class="container">
             <div class="row">

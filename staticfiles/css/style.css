@@ -6,20 +6,14 @@ body {
     line-height: 1.6;
 }
 
-.red-o {
-    color: #ff5733;
-}
 
-.light-bg {
-    background-color: #ffffff;
-}
 
 .dark-bg {
     background-color: #071e37;
 }
 
 .main-bg {
-    background-color:  #F9FAFC;
+    background-color: #F9FAFC;
 }
 
 .card {
@@ -33,28 +27,13 @@ body {
     transform: translateY(-7px);
 }
 
-.image-container {
-    position: relative;
-}
-
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 10%;
-    left: -2px;
-    background-color: #182a81;
-}
 
 .scale {
     width: 100%;
     height: auto;
 }
 
-.By {
-    color: white;
-    margin: 4px;
-    text-transform: uppercase;
-}
+
 
 .masthead {
     margin-top: 10px;
@@ -88,30 +67,6 @@ body {
     z-index: 100;
 }
 
-/* Course Styles */
-.course-link {
-    text-decoration: none;
-    color: #445261;
-    font-size: 1.2rem; /* Link boyutu artırıldı */
-}
-
-.course-link:hover,
-.page-link {
-    color: #651606;
-}
-
-.course-title {
-    margin-top: 10%;
-    margin-left: 5%;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.course-subtitle {
-    margin-left: 5%;
-    color: #6c757d;
-    font-size: 1rem;
-}
 
 /* Button Styles */
 .btn-signup,
@@ -124,16 +79,22 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.btn-edit:hover,
+.btn-edit:active {
+    background-color: #fff;
+    color: #005f5f;
+}
+
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
     color: #005f5f;
 }
-
 .link {
     color: #171f63;
     text-decoration: none;
-    font-size: 1.2rem; /* Link boyutu artırıldı */
+    font-size: 1.2rem;
+    /* Link boyutu artırıldı */
 }
 
 .link:hover,
@@ -172,7 +133,7 @@ body {
 }
 
 .navbar {
-    background-color:  #343a40;
+    background-color: #343a40;
     border-bottom: 1px solid #dee2e6;
     padding: 15px 0;
 }
@@ -183,3 +144,7 @@ body {
     margin-bottom: 20px;
 }
 
+
+img {
+    vertical-align: middle;
+}

@@ -50,4 +50,3 @@ for (let button of editButtons) {
  setTimeout(function () {
     document.getElementById("message-container").innerHTML = "";
 }, 3000);
-

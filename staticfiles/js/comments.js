@@ -45,3 +45,4 @@ for (let button of editButtons) {
         deleteModal.show();
     });
 }
+
