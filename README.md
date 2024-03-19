@@ -1,110 +1,189 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Culinary Academy
 
-Welcome XOZAN Aykut,
+ [Culinary Academy](https://8000-xozanaykut-project4-cimyq6mphm4.ws-eu110.gitpod.io/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Culinary Academy, is a culinary school and chef academy website. This project aims to offer users various cooking courses and chef training programs. By providing a wide range of culinary education opportunities, the website aims to help users enhance their cooking skills and pursue careers as professional chefs. Culinary Academy stands out with its high-quality educational programs, experienced instructors, and modern teaching methods, providing students with a creative and innovative learning environment.
+____
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![mockup](media/mockup2.png)
+____
 
-## Gitpod Reminders
+## Existing Features
+ 
+### Navigation Bar
+- The fully responsive navigation bar on all pages contains links to the Home Page, About Us, search button, register, login pages and is located on each page to allow easy navigation.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- This section will allow the user to easily navigate from page to page on all devices without having to go back to the previous page via the 'back' button.
 
-`python3 -m http.server`
+![nav](docs/img/header.png)
+____
+## The Landing Page Image
+- The homepage of Culinary Academy features basic course information along with images highlighting the company's areas of expertise. When a user clicks on a course URL, they are directed to a page providing detailed information about the course. Additionally, on this page, users can add and delete comments about the course, allowing for interactive engagement. 
+- The visual elements effectively emphasize the firm's specialization areas, creating an engaging and informative experience for visitors.
 
-A blue button should appear to click: _Make Public_,
+![workspaces](docs/img/header2.png)
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### ABOUT 
+- About Us section provides comprehensive details about the culinary courses and services offered by Culinary Academy. Each course is elaborated with further information to help clients understand the curriculum better. Moreover, visitors can explore the profiles of the academy's instructors, learning about their expertise and backgrounds. 
+- For those seeking additional information, a contact form is available at the bottom of the page to facilitate further inquiries.
+![aboutus](docs/img/about1.png)
+![aboutus](docs/img/about2.png)
+![aboutus](docs/img/about3.png)
+____
+ ### The Footer
+ - The footer section of Culinary Academy's website features links to its relevant social media platforms, allowing users to easily connect and stay updated. These links are designed to open in a new tab, ensuring seamless navigation for the users. 
+ - Additionally, the footer provides essential information such as the academy's working hours, enabling visitors to plan their interactions accordingly. 
+ - Alongside the working hours, social media icons are prominently displayed, encouraging users to engage with the academy's content across various platforms.
 
-A blue button should appear to click: _Make Public_,
+![footer](docs/img/footer1.png)
+____
+### Search
+- "Search Section": On the Culinary Academy website, there is a search button in the header that allows users to easily find the content or courses they are looking for by entering keywords. Users can input keywords to perform a search. If search results are found, users can quickly access the results. However, if no results are found, users are notified with a message indicating that no results were found. This ensures a user-friendly experience.
+![Search](docs/img/search.png)
+![Search](docs/img/search2.png)
+![Search](docs/img/search3.png)
 
-Another blue button should appear to click: _Open Browser_.
+____
+### Register
+- Registering for Culinary Academy is quite easy! Here, they can take advantage of many benefits by creating a personalized account. All they need to do is choose a username, provide an email address, and select a strong password. Then, they can create their account and embark on an adventure filled with the world's most delicious dishes. After signing up, they can join various courses, receive special tips from chefs, and explore much more
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![Register](docs/img/register1.png)
+![Register](docs/img/register2.png)
+____
+### Login
+- After logging in, users can browse through comments, leave their own feedback, and explore additional features on the site.
 
-To log into the Heroku toolbelt CLI:
+![Login](docs/img/login1.png)
+![Login](docs/img/login2.png)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+____
+## Features Left to Implement
+- To integrate a calendar for booking calls
+- An application form for the internship programme
+- Applying online for the course
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+____
 
-------
+## Performance For Mobile
 
-## Release History
+### Home page performance
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![home](docs/img/mobil1.png)
+![home](docs/img/mobil2.png)
+____
+### Courses  page performance
+![Courses](docs/img/mobil2.png)
+![Courses](docs/img/corsemobile1.png)
+![Courses](docs/img/corsemobile2.png)
+![Courses](docs/img/corsemobile4.png)
+![Courses](docs/img/corsemobile5.png)
+![Courses](docs/img/corsemobile6.png)
+![Courses](docs/img/corsemobile7.png)
+![Courses](docs/img/corsemobile8.png)
+____
+### About  page performance
 
-**September 20 2023:** Update Python version to 3.9.17.
+![About](docs/img/mobilabout.png)
+____
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Search page performance
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Search](docs/img/searchmobil1.png)
+![Search](docs/img/searchmobil2.png)
+____
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Register page performance
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![Register](docs/img/registermobile.png)
+____
+### Login page performance
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+![Login](docs/img/loginmobile.png)
+____
+### Logout page performance
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![Logout](docs/img/logoutmobile.png)
+____
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Performance For Desktop
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Home page performance
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![home](docs/img/desktop.png)
+____
+### Courses  page performance
+![Courses](docs/img/desktop1.png)
+![Courses](docs/img/desktop2.png)
+![Courses](docs/img/desktop3.png)
+![Courses](docs/img/coursedesk.png)
+![Courses](docs/img/coursedesk1.png)
+![Courses](docs/img/coursedesk2.png)
+![Courses](docs/img/coursedesk3.png)
+![Courses](docs/img/coursedesk4.png)
+____
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### About  page performance
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![Aboutus](docs/img/desktop4.png)
+____
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Search page performance
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![Search](docs/img/searchdesktop.png)
+![Search](docs/img/searchdesktop1.png)
+____
+### Register page performance
 
-------
+![Register](docs/img/searchdesktop1.png)
+![Register](docs/img/searchdesktop1.png)
+____
+### Login page performance
 
-## FAQ about the uptime script
+![Login](docs/img/logindesktop.png)
+____
+### Logout page performance
 
-**Why have you added this script?**
+![Logout](docs/img/logoutdesktop.png)
+____
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+## Validator Testing
+- HTML: No errors were found when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fxozanaykut.github.io%2Faykutlaw%2F/)
+ - CSS: No errors found when passing through the official [(Jigsaw) validator
+Deployment](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fxozanaykut.github.io%2Faykutlaw%2Fcontact.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+____
+## Deployment
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+The site was deployed to  Heroku pages. 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+    + [Local Deployment](#local-deployment)
+    + [Heroku Deployment](#heroku-deployment)-
+    + [django-aullauth Setup](#django-aullauth-setup)
+    + [cloudinary Setup](#cloudinary-Setup)
+    + [ElephantSQL Setup](#ElephantSQL-Setup)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+- The live link for Heroku can be found here - https://projectfour-1535055a6d4c.herokuapp.com/
+   
+____
+## Credits
 
-**So….?**
+### Content
+-  Instructions on how to apply form verification on the Register page are taken from 
+[Btkakademi](https://www.btkakademi.gov.tr)
+___
+### Media
+- Images used on homepage and registration page are taken from [instagram](https://www.instagram.com/)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- The image used for the About Us page was taken from[instagram](https://www.instagram.com/)
+  
+- The image used for the return page was taken from the website [instagram](https://www.instagram.com/)
 
-**Can I opt out?**
+- Favicon was downloaded at [Icons8](https://icons8.com/icons/set/book)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+- Icons in the Login taken from
+[Font Awesome](https://fontawesome.com)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+- Icons in the footer taken from
+[Font Awesome](https://fontawesome.com)
