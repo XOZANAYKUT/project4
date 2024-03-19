@@ -45,3 +45,9 @@ for (let button of editButtons) {
         deleteModal.show();
     });
 }
+
+ // Remove messages after 3 seconds
+ setTimeout(function () {
+    document.getElementById("message-container").innerHTML = "";
+}, 3000);
+
