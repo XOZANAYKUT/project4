@@ -44,7 +44,7 @@ body {
     margin-top: 20px;
     overflow: hidden;
     position: relative;
-    height: 75vh;
+    height: 55vh;
     width: 100%;
 }
 
@@ -183,11 +183,11 @@ body {
 }
 
 .navbar {
-    background-color: #343a40;
-    border-bottom: 1px solid #dee2e6;
     padding: 15px 0;
 }
-
+.navbar-nav .nav-link:hover {
+    color: #a807ff !important;
+}
 /* Title Style */
 .title-container {
     text-align: center;
