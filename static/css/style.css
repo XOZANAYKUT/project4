@@ -198,3 +198,13 @@ body {
 img {
     vertical-align: middle;
 }
+
+.card-footer {
+    background-color: #33df5b !important;
+    color: black !important;
+    padding: 5px !important;
+}
+
+.card-footer small {
+    font-weight: bold !important;
+}
