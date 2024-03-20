@@ -11,7 +11,11 @@
                 <p class="course-subtitle">{{ course.author }} | {{ course.created_on }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
-                <img src="{% static 'images/mitoloji.jpg' %}" class="scale" alt="placeholder">
+                {% if "placeholder" in course.featured_image.url %}
+                <img class="card-img-top" src="{% static 'images/mitoloji.jpg' %}" alt="Placeholder Image">
+                {% else %}
+                <img class="card-img-top" src="{{ course.featured_image.url }}" alt="{{ course.title }}">
+                {% endif %}
             </div>
         </div>
     </div>
