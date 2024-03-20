@@ -5,7 +5,7 @@
 Culinary Academy, is a culinary school and chef academy website. This project aims to offer users various cooking courses and chef training programs. By providing a wide range of culinary education opportunities, the website aims to help users enhance their cooking skills and pursue careers as professional chefs. Culinary Academy stands out with its high-quality educational programs, experienced instructors, and modern teaching methods, providing students with a creative and innovative learning environment.
 ____
 
-![mockup](media/mockup2.png)
+![mockup](docs/img/moc.png)
 ____
 
 ## Existing Features
@@ -28,7 +28,9 @@ ____
 - About Us section provides comprehensive details about the culinary courses and services offered by Culinary Academy. Each course is elaborated with further information to help clients understand the curriculum better. Moreover, visitors can explore the profiles of the academy's instructors, learning about their expertise and backgrounds. 
 - For those seeking additional information, a contact form is available at the bottom of the page to facilitate further inquiries.
 ![aboutus](docs/img/about1.png)
+____
 ![aboutus](docs/img/about2.png)
+____
 ![aboutus](docs/img/about3.png)
 ____
  ### The Footer
@@ -41,7 +43,9 @@ ____
 ### Search
 - "Search Section": On the Culinary Academy website, there is a search button in the header that allows users to easily find the content or courses they are looking for by entering keywords. Users can input keywords to perform a search. If search results are found, users can quickly access the results. However, if no results are found, users are notified with a message indicating that no results were found. This ensures a user-friendly experience.
 ![Search](docs/img/search.png)
+____
 ![Search](docs/img/search2.png)
+____
 ![Search](docs/img/search3.png)
 
 ____
@@ -49,12 +53,14 @@ ____
 - Registering for Culinary Academy is quite easy! Here, they can take advantage of many benefits by creating a personalized account. All they need to do is choose a username, provide an email address, and select a strong password. Then, they can create their account and embark on an adventure filled with the world's most delicious dishes. After signing up, they can join various courses, receive special tips from chefs, and explore much more
 
 ![Register](docs/img/register1.png)
+____
 ![Register](docs/img/register2.png)
 ____
 ### Login
 - After logging in, users can browse through comments, leave their own feedback, and explore additional features on the site.
 
 ![Login](docs/img/login1.png)
+____
 ![Login](docs/img/login2.png)
 
 ____
@@ -70,16 +76,24 @@ ____
 ### Home page performance
 
 ![home](docs/img/mobil1.png)
+____
 ![home](docs/img/mobil2.png)
 ____
 ### Courses  page performance
 ![Courses](docs/img/mobil2.png)
+____
 ![Courses](docs/img/corsemobile1.png)
+____
 ![Courses](docs/img/corsemobile2.png)
+____
 ![Courses](docs/img/corsemobile4.png)
+____
 ![Courses](docs/img/corsemobile5.png)
+____
 ![Courses](docs/img/corsemobile6.png)
+____
 ![Courses](docs/img/corsemobile7.png)
+____
 ![Courses](docs/img/corsemobile8.png)
 ____
 ### About  page performance
@@ -90,6 +104,7 @@ ____
 ### Search page performance
 
 ![Search](docs/img/searchmobil1.png)
+____
 ![Search](docs/img/searchmobil2.png)
 ____
 
@@ -115,12 +130,19 @@ ____
 ____
 ### Courses  page performance
 ![Courses](docs/img/desktop1.png)
+____
 ![Courses](docs/img/desktop2.png)
+____
 ![Courses](docs/img/desktop3.png)
+____
 ![Courses](docs/img/coursedesk.png)
+____
 ![Courses](docs/img/coursedesk1.png)
+____
 ![Courses](docs/img/coursedesk2.png)
+____
 ![Courses](docs/img/coursedesk3.png)
+____
 ![Courses](docs/img/coursedesk4.png)
 ____
 
@@ -132,11 +154,13 @@ ____
 ### Search page performance
 
 ![Search](docs/img/searchdesktop.png)
+____
 ![Search](docs/img/searchdesktop1.png)
 ____
 ### Register page performance
 
 ![Register](docs/img/searchdesktop1.png)
+____
 ![Register](docs/img/searchdesktop1.png)
 ____
 ### Login page performance
