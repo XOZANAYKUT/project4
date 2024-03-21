@@ -111,12 +111,12 @@ ____
 ![home](docs/images/desk.png)
 ____
 ### Courses  page performance
-![Courses](docs/images/desk2.png)
+![Aboutus](docs/images/desk3.png)
 ____
 
 ### About  page performance
+![Courses](docs/images/desk2.png)
 
-![Aboutus](docs/images/desk3.png)
 ____
 
 ### Search page performance
