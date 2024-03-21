@@ -50,7 +50,6 @@ body {
     position: relative;
     text-align: center;
     padding: 50px 0;
-   
 }
 
 /* Masthead image container */
@@ -214,4 +213,9 @@ img {
 #carouselExampleIndicators {
     max-width: 600px !important;
     margin: 0 auto !important;
+}
+.card-title,
+.card-text,
+.form-label {
+    font-weight: bold !important;
 }
