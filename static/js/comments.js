@@ -46,7 +46,4 @@ for (let button of editButtons) {
     });
 }
 
- // Remove messages after 3 seconds
- setTimeout(function () {
-    document.getElementById("message-container").innerHTML = "";
-}, 3000);
+ 

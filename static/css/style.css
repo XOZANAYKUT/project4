@@ -20,12 +20,6 @@ body {
     background-color: #F9FAFC;
 }
 
-.card {
-    border: none;
-    background-color: #ffffff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
 
 .card:hover {
     transform: translateY(-7px);
@@ -46,6 +40,7 @@ body {
     position: relative;
     height: 55vh;
     width: 100%;
+    
 }
 
 /* Masthead text */
@@ -55,14 +50,15 @@ body {
     position: relative;
     text-align: center;
     padding: 50px 0;
+   
 }
 
 /* Masthead image container */
 .masthead-image {
     position: relative;
     overflow: hidden;
-    border-radius: 10px; /* Köşeleri yuvarlak yapmak için */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Hafif bir gölge efekti */
+    border-radius: 10px; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); 
 }
 
 /* Skew overlay for image */
@@ -76,12 +72,12 @@ body {
     background: rgba(68, 82, 97, 0.7);
     z-index: 1;
     transition: all 0.5s ease;
-    opacity: 0; /* Başlangıçta görünmez olacak */
+    opacity: 0; 
 }
 
 /* Hover effect for overlay */
 .masthead-image:hover:after {
-    opacity: 1; /* Hover durumunda görünür olacak */
+    opacity: 1; 
 }
 
 /* Masthead image */
@@ -89,12 +85,12 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.5s ease; /* Sadece dönüşüm özelliğine geçiş efekti uygulandı */
+    transition: transform 0.5s ease; 
 }
 
 /* Hover effect for image */
 .masthead-image:hover img {
-    transform: scale(1.1); /* Hover durumunda resmi büyütme efekti */
+    transform: scale(1.1); 
 }
 
 /* Course Styles */
@@ -102,7 +98,6 @@ body {
     text-decoration: none;
     color: #445261;
     font-size: 1.2rem;
-    /* Link boyutu artırıldı */
 }
 
 .course-link:hover,
@@ -126,13 +121,17 @@ body {
 /* Button Styles */
 .btn-signup,
 .btn-edit {
-    background-color: #0c1919;
-    color: #1121ce;
+    background-color: #b9e25b;
+    color: #000000;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+.btn-edit:hover,
+.btn-edit:active {
+    background-color: #abf009;
+}  
 
 .btn-signup:hover,
 .btn-signup:active {
@@ -144,7 +143,6 @@ body {
     color: #171f63;
     text-decoration: none;
     font-size: 1.2rem;
-    /* Link boyutu artırıldı */
 }
 
 .link:hover,
@@ -187,11 +185,13 @@ body {
 }
 .navbar-nav .nav-link:hover {
     color: #a807ff !important;
+   
 }
 /* Title Style */
 .title-container {
     text-align: center;
     margin-bottom: 20px;
+    font-weight: bold
 }
 
 
@@ -205,7 +205,13 @@ img {
     padding: 5px !important;
 }
 
+
 .card-footer small {
     font-weight: bold !important;
 }
 
+/* Carousel Styles */
+#carouselExampleIndicators {
+    max-width: 600px !important;
+    margin: 0 auto !important;
+}

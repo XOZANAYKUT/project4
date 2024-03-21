@@ -6,6 +6,11 @@ body {
     line-height: 1.6;
 }
 
+.red-o {
+    color: #ff5733;
+}
+
+
 
 .dark-bg {
     background-color: #071e37;
@@ -34,38 +39,89 @@ body {
 
 
 
+/* Masthead container */
 .masthead {
-    margin-top: 10px;
+    margin-top: 20px;
     overflow: hidden;
     position: relative;
-    display: inline-block;
-    height: 33vh;
+    height: 55vh;
     width: 100%;
 }
 
+/* Masthead text */
 .masthead-text {
-    background-color: #445261;
-    color: #101463;
+    background-color: #040404;
+    color: #e4e5ee;
     position: relative;
+    text-align: center;
+    padding: 50px 0;
 }
 
+/* Masthead image container */
 .masthead-image {
     position: relative;
     overflow: hidden;
+    border-radius: 10px; /* Köşeleri yuvarlak yapmak için */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Hafif bir gölge efekti */
 }
 
+/* Skew overlay for image */
 .masthead-image:after {
     content: "";
     position: absolute;
     top: 0;
-    right: 90%;
+    left: 0;
     height: 100%;
-    width: 150%;
-    background: #445261;
-    transform: skew(15deg);
-    z-index: 100;
+    width: 100%;
+    background: rgba(68, 82, 97, 0.7);
+    z-index: 1;
+    transition: all 0.5s ease;
+    opacity: 0; /* Başlangıçta görünmez olacak */
 }
 
+/* Hover effect for overlay */
+.masthead-image:hover:after {
+    opacity: 1; /* Hover durumunda görünür olacak */
+}
+
+/* Masthead image */
+.masthead-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease; /* Sadece dönüşüm özelliğine geçiş efekti uygulandı */
+}
+
+/* Hover effect for image */
+.masthead-image:hover img {
+    transform: scale(1.1); /* Hover durumunda resmi büyütme efekti */
+}
+
+/* Course Styles */
+.course-link {
+    text-decoration: none;
+    color: #445261;
+    font-size: 1.2rem;
+    /* Link boyutu artırıldı */
+}
+
+.course-link:hover,
+.page-link {
+    color: #651606;
+}
+
+.course-title {
+    margin-top: 10%;
+    margin-left: 5%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.course-subtitle {
+    margin-left: 5%;
+    color: #6c757d;
+    font-size: 1rem;
+}
 
 /* Button Styles */
 .btn-signup,
@@ -78,21 +134,30 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn-edit:hover,
-.btn-edit:active {
-    background-color: #fff;
-    color: #005f5f;
-}
-
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
     color: #005f5f;
 }
 
+.link {
+    color: #171f63;
+    text-decoration: none;
+    font-size: 1.2rem;
+    /* Link boyutu artırıldı */
+}
 
+.link:hover,
+.link:active {
+    color: #445261;
+    text-decoration: underline;
+}
 
-
+.btn-like {
+    color: #e84610;
+    border: none;
+    background: transparent;
+}
 
 .btn-delete {
     color: #fff;
@@ -118,14 +183,34 @@ body {
 }
 
 .navbar {
-    background-color: #343a40;
-    border-bottom: 1px solid #dee2e6;
     padding: 15px 0;
 }
-
+.navbar-nav .nav-link:hover {
+    color: #a807ff !important;
+}
 /* Title Style */
+.title-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 
 img {
     vertical-align: middle;
 }
 
+.card-footer {
+    background-color: #adb2f0 !important;
+    color: black !important;
+    padding: 5px !important;
+}
+
+.card-footer small {
+    font-weight: bold !important;
+}
+
+/* Carousel Styles */
+#carouselExampleIndicators {
+    max-width: 600px !important;
+    margin: 0 auto !important;
+}
