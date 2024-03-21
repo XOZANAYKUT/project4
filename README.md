@@ -5,7 +5,7 @@
 Culinary Academy, is a culinary school and chef academy website. This project aims to offer users various cooking courses and chef training programs. By providing a wide range of culinary education opportunities, the website aims to help users enhance their cooking skills and pursue careers as professional chefs. Culinary Academy stands out with its high-quality educational programs, experienced instructors, and modern teaching methods, providing students with a creative and innovative learning environment.
 ____
 
-![mockup](docs/img/moc.png)
+![mockup](docs/images/mock.png)
 ____
 
 ## Existing Features
@@ -15,55 +15,52 @@ ____
 
 - This section will allow the user to easily navigate from page to page on all devices without having to go back to the previous page via the 'back' button.
 
-![nav](docs/img/header.png)
+![nav](docs/images/nav.png)
 ____
 ## The Landing Page Image
 - The homepage of Culinary Academy features basic course information along with images highlighting the company's areas of expertise. When a user clicks on a course URL, they are directed to a page providing detailed information about the course. Additionally, on this page, users can add and delete comments about the course, allowing for interactive engagement. 
 - The visual elements effectively emphasize the firm's specialization areas, creating an engaging and informative experience for visitors.
 
-![workspaces](docs/img/header2.png)
+![workspaces](docs/images/home.png)
 
 
 ### ABOUT 
 - About Us section provides comprehensive details about the culinary courses and services offered by Culinary Academy. Each course is elaborated with further information to help clients understand the curriculum better. Moreover, visitors can explore the profiles of the academy's instructors, learning about their expertise and backgrounds. 
 - For those seeking additional information, a contact form is available at the bottom of the page to facilitate further inquiries.
-![aboutus](docs/img/about1.png)
+![aboutus](docs/images/about1.png)
 ____
-![aboutus](docs/img/about2.png)
+![aboutus](docs/images/about2.png)
 ____
-![aboutus](docs/img/about3.png)
+![aboutus](docs/images/about3.png)
 ____
  ### The Footer
  - The footer section of Culinary Academy's website features links to its relevant social media platforms, allowing users to easily connect and stay updated. These links are designed to open in a new tab, ensuring seamless navigation for the users. 
  - Additionally, the footer provides essential information such as the academy's working hours, enabling visitors to plan their interactions accordingly. 
  - Alongside the working hours, social media icons are prominently displayed, encouraging users to engage with the academy's content across various platforms.
 
-![footer](docs/img/footer1.png)
+![footer](docs/images/footer.png)
 ____
 ### Search
 - "Search Section": On the Culinary Academy website, there is a search button in the header that allows users to easily find the content or courses they are looking for by entering keywords. Users can input keywords to perform a search. If search results are found, users can quickly access the results. However, if no results are found, users are notified with a message indicating that no results were found. This ensures a user-friendly experience.
-![Search](docs/img/search.png)
+![Search](docs/images/search1.png)
 ____
-![Search](docs/img/search2.png)
+![Search](docs/images/search2.png)
 ____
-![Search](docs/img/search3.png)
+![Search](docs/images/search3.png)
 
 ____
 ### Register
 - Registering for Culinary Academy is quite easy! Here, they can take advantage of many benefits by creating a personalized account. All they need to do is choose a username, provide an email address, and select a strong password. Then, they can create their account and embark on an adventure filled with the world's most delicious dishes. After signing up, they can join various courses, receive special tips from chefs, and explore much more
 
-![Register](docs/img/register1.png)
-____
-![Register](docs/img/register2.png)
-____
+![Register](docs/images/register.png)
+
+___
 ### Login
 - After logging in, users can browse through comments, leave their own feedback, and explore additional features on the site.
 
-![Login](docs/img/login1.png)
+![Login](docs/images/login.png)
 ____
-![Login](docs/img/login2.png)
 
-____
 ## Features Left to Implement
 - To integrate a calendar for booking calls
 - An application form for the internship programme
@@ -75,50 +72,35 @@ ____
 
 ### Home page performance
 
-![home](docs/img/mobil1.png)
+![home](docs/images/mobil1.png)
 ____
-![home](docs/img/mobil2.png)
-____
+
 ### Courses  page performance
-![Courses](docs/img/mobil2.png)
-____
-![Courses](docs/img/corsemobile1.png)
-____
-![Courses](docs/img/corsemobile2.png)
-____
-![Courses](docs/img/corsemobile4.png)
-____
-![Courses](docs/img/corsemobile5.png)
-____
-![Courses](docs/img/corsemobile6.png)
-____
-![Courses](docs/img/corsemobile7.png)
-____
-![Courses](docs/img/corsemobile8.png)
+![Courses](docs/images/courses.png)
 ____
 ### About  page performance
 
-![About](docs/img/mobilabout.png)
+![About](docs/images/about.png)
 ____
 
 ### Search page performance
 
-![Search](docs/img/searchmobil1.png)
+![Search](docs/images/search.png)
 ____
-![Search](docs/img/searchmobil2.png)
+![Search](docs/images/src.png)
 ____
 
 ### Register page performance
 
-![Register](docs/img/registermobile.png)
+![Register](docs/images/rgr.png)
 ____
 ### Login page performance
 
-![Login](docs/img/loginmobile.png)
+![Login](docs/images/lgn.png)
 ____
 ### Logout page performance
 
-![Logout](docs/img/logoutmobile.png)
+![Logout](docs/images/sgn.png)
 ____
 
 
@@ -126,50 +108,36 @@ ____
 
 ### Home page performance
 
-![home](docs/img/desktop.png)
+![home](docs/images/desk.png)
 ____
 ### Courses  page performance
-![Courses](docs/img/desktop1.png)
-____
-![Courses](docs/img/desktop2.png)
-____
-![Courses](docs/img/desktop3.png)
-____
-![Courses](docs/img/coursedesk.png)
-____
-![Courses](docs/img/coursedesk1.png)
-____
-![Courses](docs/img/coursedesk2.png)
-____
-![Courses](docs/img/coursedesk3.png)
-____
-![Courses](docs/img/coursedesk4.png)
+![Courses](docs/images/desk2.png)
 ____
 
 ### About  page performance
 
-![Aboutus](docs/img/desktop4.png)
+![Aboutus](docs/images/desk3.png)
 ____
 
 ### Search page performance
 
-![Search](docs/img/searchdesktop.png)
+![Search](docs/images/desk5.png)
 ____
-![Search](docs/img/searchdesktop1.png)
+![Search](docs/images/desk4.png)
 ____
+
 ### Register page performance
 
-![Register](docs/img/searchdesktop1.png)
+![Register](docs/images/desk6.png)
 ____
-![Register](docs/img/searchdesktop1.png)
-____
+
 ### Login page performance
 
-![Login](docs/img/logindesktop.png)
+![Login](docs/images/desk7.png)
 ____
 ### Logout page performance
 
-![Logout](docs/img/logoutdesktop.png)
+![Logout](docs/images/desk8.png)
 ____
 
 
