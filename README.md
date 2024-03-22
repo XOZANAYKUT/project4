@@ -158,13 +158,27 @@ ____
 - status: The status of the course, which can be draft or published.
 - excerpt: A summary of the course.
 - updated_on: The date when the course information was last updated.
-- The Comment model has the following fields:
+____
+## The Comment model has the following fields:
 
 - course: A foreign key representing the course to which the comment is attached. When a course is deleted, associated comments are automatically deleted.
 - author: A foreign key representing the author of the comment. When a user is deleted, their associated comments are automatically deleted.
 - body: The content of the comment.
 - approved: The approval status of the comment. By default, comments are set as unapproved.
 - created_on: The date when the comment was create
+
+## The About  model has the following fields:
+
+- title: A CharField representing the title of the about section.
+- updated_on: A DateTimeField automatically updated with the current date and time whenever the model is saved.
+- profile_image: A CloudinaryField representing the image associated with the about section. It has a default value of 'placeholder'.
+- content: A TextField containing the detailed content or description.
+## model has the following fields:
+
+- name: A CharField representing the name of the person making the collaboration request.
+- email: An EmailField representing the email address of the person making the collaboration request.
+- message: A TextField containing the message or details of the collaboration request.
+- read: A BooleanField indicating whether the collaboration request has been read or not. It has a default value of False.
 ____
 ![data](docs/images/data.png) 
 ____
