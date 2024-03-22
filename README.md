@@ -141,15 +141,90 @@ ____
 ![Logout](docs/images/desk8.png)
 ____
 
+## Data Model
 
+- The Django model definitions provided down create models for a course and comments. The "Course" model represents a course created by a user, while the "Comment" model represents comments made on courses.
+
+### The Course model has the following fields:
+
+- title: The title of the course.
+- slug: A unique URL tag for the course.
+- author: A foreign key representing the author of the course. When a user is deleted, their associated courses are  automatically deleted.
+- featured_image: The featured image for the course.
+- content: The content of the course.
+- date: The date of the course.
+- duration: The duration of the course, which can be short-term or long-term.
+- created_on: The date when the course was created.
+- status: The status of the course, which can be draft or published.
+- excerpt: A summary of the course.
+- updated_on: The date when the course information was last updated.
+- The Comment model has the following fields:
+
+- course: A foreign key representing the course to which the comment is attached. When a course is deleted, associated comments are automatically deleted.
+- author: A foreign key representing the author of the comment. When a user is deleted, their associated comments are automatically deleted.
+- body: The content of the comment.
+- approved: The approval status of the comment. By default, comments are set as unapproved.
+- created_on: The date when the comment was create
+____
+![data](docs/images/data.png) 
+____
 ## Validator Testing
 - HTML: No errors were found when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fprojectfour-1535055a6d4c.herokuapp.com%2F)
  - CSS: No errors found when passing through the official [(Jigsaw) validator
 Deployment](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fprojectfour-1535055a6d4c.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 ____
-## Deployment
+## Deployment - Heroku
 
-The site was deployed to  Heroku pages. 
+To deploy this page to Heroku from its GitHub repository, the following steps were taken:
+
+### Create the Heroku App:
+
+- Log in to [Heroku](https://id.heroku.com/) or create an account.
+- On the main page click the button labelled New in the top right corner and from the drop-down menu select "Create 
+- New App".
+- Enter a unique and meaningful app name.
+- Next select your region.
+- Click on the Create App button.
+
+### Attach the Postgres database:
+-  In the Resources tab, under add-ons, type in Postgres and select the Heroku Postgres option.
+-  Copy the DATABASE_URL located in Config Vars in the Settings Tab.
+
+### Prepare the environment and settings.py file:
+- In your GitPod workspace, create an env.py file in the main directory.
+- Add the DATABASE_URL value and your chosen SECRET_KEY value to the env.py file.
+- Update the settings.py file to import the env.py file and add the SECRETKEY and DATABASE_URL file paths.
+- Comment out the default database configuration.
+- Save files and make migrations.
+- Add Cloudinary URL to env.py
+- Add the cloudinary libraries to the list of installed apps.
+- Add the STATIC files settings - the url, storage path, directory path, root path, media url and default file 
+ storage path.
+- Link the file to the templates directory in Heroku.
+- Change the templates directory to TEMPLATES_DIR
+- Add Heroku to the ALLOWED_HOSTS list the format ['app_name.heroku.com', 'localhost']
+
+### Create files / directories
+- Create requirements.txt file
+- Create three directories in the main directory; media, storage and templates.
+- Create a file named "Procfile" in the main directory and add the following: web: gunicorn project-name.wsgi
+
+###
+Add the following Config Vars in Heroku:
+
+- SECRET_KEY value
+- CLOUDINARY_URL
+- PORT = 8000
+- DISABLE_COLLECTSTATIC = 1
+- DATABASE_URL 
+
+### Deploy
+
+- NB: Ensure in Django settings, DEBUG is False
+- Go to the deploy tab on Heroku and connect to GitHub, then to the required repository.
+- Scroll to the bottom of the deploy page and either click Enable Automatic Deploys for automatic deploys or Deploy - Branch to deploy manually. Manually deployed branches will need re-deploying each time the repo is updated.
+- Click View to view the deployed site.
+- The site is now live and operational.
 
     + [Local Deployment](#local-deployment)
     + [Heroku Deployment](#heroku-deployment)-
@@ -165,7 +240,9 @@ ____
 ### Content
 -  Instructions on how to apply form verification on the Register page are taken from 
 [Btkakademi](https://www.btkakademi.gov.tr)
-___
+[Bootstrap](https://getbootstrap.com/)
+[w3schools](https://www.w3schools.com/)
+
 ### Media
 - Images used on homepage and registration page are taken from [instagram](https://www.instagram.com/)
 
