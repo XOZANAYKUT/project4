@@ -1,11 +1,13 @@
-const editButtons = document.getElementsByClassName("btn-edit");
-const commentText = document.getElementById("id_body");
-const commentForm = document.getElementById("commentForm");
-const submitButton = document.getElementById("submitButton");
+/* eslint-env es6 */
 
-const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
-const deleteButtons = document.getElementsByClassName("btn-delete");
-const deleteConfirm = document.getElementById("deleteConfirm");
+let editButtons = document.getElementsByClassName("btn-edit");
+let commentText = document.getElementById("id_body");
+let commentForm = document.getElementById("commentForm");
+let submitButton = document.getElementById("submitButton");
+
+let deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
+let deleteButtons = document.getElementsByClassName("btn-delete");
+let deleteConfirm = document.getElementById("deleteConfirm");
 
 /*
  * Initializes edit functionality for the provided edit buttons.
@@ -45,5 +47,3 @@ for (let button of editButtons) {
         deleteModal.show();
     });
 }
-
- 
