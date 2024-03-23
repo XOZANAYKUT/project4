@@ -4,6 +4,7 @@ from .models import Course, Comment
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from .forms import CommentForm
+from django.db.models import Q
 
 class CourseList(generic.ListView):
     queryset = Course.objects.filter(status=1)
@@ -76,7 +77,32 @@ def course_detail(request, slug):
         },
     )
     
+
 def search_results(request):
+    """
+    View function for displaying search results based on user query.
+
+    Retrieves the search query entered by the user from the request.
+    Validates the search query and displays appropriate error messages if invalid.
+    Performs a search on course titles and content containing the query.
+    Returns a list of courses matching the search query to be displayed.
+
+    *Context*
+    ''courses''
+        An instance of :model:course.Course
+
+    *Template*
+    courses/search_results.html
+    """
     query = request.GET.get('q')
-    courses = Course.objects.filter(title__icontains=query)
+
+    if not query:
+        messages.add_message(request, messages.ERROR, "Please enter a search query.")
+        return render(request, 'courses/search_results.html', {'courses': []})
+
+    if len(query) > 100:
+        messages.add_message(request, messages.ERROR, "Search query is too long. Maximum length is 100 characters.")
+        return render(request, 'courses/search_results.html', {'courses': []})
+
+    courses = Course.objects.filter(Q(title__icontains=query) | Q(content__icontains=query))
     return render(request, 'courses/search_results.html', {'courses': courses})

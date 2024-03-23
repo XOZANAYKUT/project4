@@ -1,11 +1,32 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+{% load crispy_forms_tags %}
 
-{% block search %}
-{% for course in courses %}
-<a href="{% url 'course_detail' course.slug %}" class="course-link">
-    <h2 class="card-title course-title">{{ course.title }}</h2>
-</a>
-{% empty %}
-<p>No results found.</p>
-{% endfor %}
+<div class="container mt-5">
+    <div class="row">
+        {% if courses %}
+            {% for course in courses %}
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        {% if course.featured_image %}
+                            <img src="{{ course.featured_image.url }}" class="card-img-top" alt="{{ course.title }}">
+                        {% else %}
+                            <img src="{% static 'images/default_course.jpg' %}" class="card-img-top" alt="Default Course Image">
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title">{{ course.title }}</h5>
+                            <p class="card-text">{{ course.description }}</p>
+                            <a href="{% url 'course_detail' course.slug %}" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="col">
+                <p>No courses found.</p>
+            </div>
+        {% endif %}
+    </div>
+</div>
 {% endblock %}
