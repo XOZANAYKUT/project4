@@ -7,8 +7,52 @@ ____
 
 ![mockup](docs/images/mock.png)
 ____
+## User Experience (UX)
+- A visitor to Culinary Academy is typically an adult who has a passion for food and enjoys exploring new recipes. They are enthusiastic about cooking but also value efficiency and convenience, especially when it comes to planning meals for their everyday life. Culinary Academy aims to cater to individuals who want to elevate their culinary skills, discover diverse recipes, and streamline their meal planning process. Whether they are seeking inspiration for weeknight dinners or looking to expand their cooking repertoire, Culinary Academy provides a comprehensive platform tailored to meet the needs of food enthusiasts who value both taste and convenience.
+
+## User Stories
+____
+### Viewing and Searching Courses:
+
+- As a user, I should be able to view the courses offered on the Culinary Academy platform and search for courses that interest me.
+### Viewing Course Details:
+
+- As a user, I should be able to access the details of a course by clicking on its title or content. These details should include the course content, duration, creation date, and status.
+### Creating a comment:
+
+- As a registered user, I should be able to create a comment for a featured course.
+### Edit and Delete Comments:
+
+- As a user, I should be able to edit and delete comments that I have created. In this way, I should be able to delete and update the content of a comment.
+#### Get in touch:
+
+- As a user I should be able to communicate with the created contact form so that I can make suggestions and get more information about the courses.
+
+### Making Comments:
+
+- On the detail page of any course, I should be able to leave comments related to that course. These comments should allow me to share information with other users and provide feedback about the course.
+____
+
+## Admin Stories
+____
+
+### Managing Courses:
+
+- As an administrator, I should be able to view all courses on the platform, edit them if necessary, and delete unwanted courses.
+### Approving and Managing Comments:
+
+- As an administrator, I should be able to approve, edit, and remove comments left by users on courses.
+### Managing User Accounts:
+
+- As an administrator, I should be able to view user accounts on the platform, edit them if necessary, and take actions such as banning users if required. This is important for maintaining the security and integrity of the platform.
+### Editing and Deleting Courses:
+
+- As a user, I should be able to edit and delete the courses I have created. This should allow me to update the content, title, duration, or featured image of a course.
+
+____
 
 ## Existing Features
+____
  
 ### Navigation Bar
 - The fully responsive navigation bar on all pages contains links to the Home Page, About Us, search button, register, login pages and is located on each page to allow easy navigation.
@@ -184,9 +228,29 @@ ____
 ____
 ## Validator Testing
 - HTML: No errors were found when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fprojectfour-1535055a6d4c.herokuapp.com%2F)
- - CSS: No errors found when passing through the official [(Jigsaw) validator
-Deployment](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fprojectfour-1535055a6d4c.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+ - CSS: No errors found when passing through the official [(Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fprojectfour-1535055a6d4c.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+ 
+ ![testing](docs/images/testing.png) 
+ ## Javascript
+- No errors found when passing through the official [jshint ](https://jshint.com/)
 ____
+## Python 
+- No errors found when passing through the official [pep8ci ](https://pep8ci.herokuapp.com/)
+____
+
+## Device Testing
+- The website was viewed on a variety of devices such as Desktop, Laptop, iPhone 8, iPhoneXR and iPad to ensure responsiveness on various screen sizes in both portrait and landscape mode. The website performed as intended. The responsive design was also checked using Chrome developer tools across multiple devices with structural integrity holding for the various sizes.
+____
+
+## Manual Testing
+![testing](docs/images/testing2.png) 
+![testing](docs/images/tst.png) 
+![testing](docs/images/testin2.png) 
+![testing](docs/images/testing3.png) 
+![testing](docs/images/testin4.png) 
+![testing](docs/images/testing5.png) 
+____
+
 ## Deployment - Heroku
 
 To deploy this page to Heroku from its GitHub repository, the following steps were taken:
