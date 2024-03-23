@@ -77,7 +77,6 @@ def course_detail(request, slug):
         },
     )
     
-
 def search_results(request):
     """
     View function for displaying search results based on user query.
