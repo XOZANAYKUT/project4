@@ -45,39 +45,55 @@
         <div class="col-md-12">
             <div class="card shadow p-3 mb-5 bg-body rounded">
                 <div class="card-body">
-                    <h2 class="card-title text-center red-o"><strong>{{ about.title }}</strong></h2>
-                    <p class="card-text"><strong>{{ about.content | safe }}</strong></p>
-                    <p class="card-text text-center"><em class="red-o"><strong>Updated on:
-                                {{ about.updated_on }}</strong></em></p>
+                    <h2 class="card-title text-center red-o">
+                        <strong>{{ about.title }}</strong>
+                    </h2>
+                    <p class="card-text">
+                        {{ about.content | safe }}
+                    </p>
+                    <p class="card-text text-center">
+                        <em class="red-o">Updated on:
+                            <strong>{{ about.updated_on }}</strong>
+                        </em>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-
+    
     <div class="row mt-5">
         <div class="col-md-6 offset-md-3">
             <div class="card shadow p-3 mb-5 bg-body rounded">
                 <div class="card-body">
-                    <h3 class="card-title text-center red-o mb-4"><strong>Get in Touch</strong></h3>
+                    <h3 class="card-title text-center red-o mb-4">
+                        <strong>Get in Touch</strong>
+                    </h3>
                     <form id="collaborate-form" method="post">
                         {% csrf_token %}
                         <div class="mb-3">
-                            <label for="name" class="form-label fs-5"><strong>Name:</strong></label>
+                            <label for="name" class="form-label fs-5">
+                                <strong>Name:</strong>
+                            </label>
                             <input type="text" class="form-control" id="name" name="name" required>
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label fs-5"><strong>Email address:</strong></label>
+                            <label for="email" class="form-label fs-5">
+                                <strong>Email address:</strong>
+                            </label>
                             <input type="email" class="form-control" id="email" name="email" required
                                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                             <div class="invalid-feedback">Please enter a valid email address.</div>
                         </div>
                         <div class="mb-3">
-                            <label for="message" class="form-label fs-5"><strong>Message:</strong></label>
+                            <label for="message" class="form-label fs-5">
+                                <strong>Message:</strong>
+                            </label>
                             <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                         </div>
                         <div class="mb-3">
-                            <button type="submit"
-                                class="btn btn-secondary btn-block fs-5"><strong>Submit</strong></button>
+                            <button type="submit" class="btn btn-secondary btn-block fs-5">
+                                <strong>Submit</strong>
+                            </button>
                         </div>
                     </form>
                 </div>
