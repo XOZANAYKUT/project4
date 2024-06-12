@@ -1,10 +1,12 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.views import generic
-from .models import Course, Comment
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
 from django.contrib import messages
-from .forms import CommentForm
 from django.db.models import Q
+from .models import Course, Comment
+from .forms import CommentForm, CourseForm
+
 
 class CourseList(generic.ListView):
     queryset = Course.objects.filter(status=1)
@@ -105,3 +107,29 @@ def search_results(request):
 
     courses = Course.objects.filter(Q(title__icontains=query) | Q(content__icontains=query))
     return render(request, 'courses/search_results.html', {'courses': courses})
+
+
+@login_required
+def add_course(request):
+    """ Add a course to the website """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only superusers can do that.')
+        return redirect(reverse('home'))
+
+    if request.method == 'POST':
+        form = CourseForm(request.POST, request.FILES)
+        if form.is_valid():
+            course = form.save()
+            messages.success(request, 'Successfully added course!')
+            return redirect(reverse('course_detail', args=[course.slug]))
+        else:
+            messages.error(request, 'Failed to add course. Please ensure the form is valid.')
+    else:
+        form = CourseForm()
+
+    template = 'courses/add_course.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)

@@ -11,8 +11,6 @@ body {
     color: #ff5733;
 }
 
-
-
 .dark-bg {
     background-color: #071e37;
 }
@@ -187,6 +185,12 @@ body {
     color: #a807ff !important;
    
 }
+
+.navbar-nav .nav-item.d-flex {
+    display: flex;
+    align-items: center;
+}
+
 /* Title Style */
 .title-container {
     text-align: center;
