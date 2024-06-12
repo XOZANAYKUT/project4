@@ -15,6 +15,7 @@
                 <form method="post" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form | crispy }}
+                    <input type="hidden" name="next" value="/add_course/">
                     <button class="btn btn-primary btn-signup" type="submit">Add Course</button>
                     <a href="{% url 'home' %}" class="btn btn-secondary">Cancel</a>
                 </form>
