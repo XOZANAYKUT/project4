@@ -8,9 +8,9 @@
         <div class="row g-0">
             <div class="col-md-6 masthead-text">
                 <h1 class="course">{{ course.title }}</h1>
-                <p class="course-subtitle">{{ course.author }} | {{ course.created_on }}</p>
+                <div class="course-subtitle">{{ course.author }} | {{ course.created_on }}</div>
                 {% if course.duration %}
-                <p class="course-duration">Duration: {{ course.duration }}</p>
+                <div class="course-duration">Duration: {{ course.duration }}</div>
                 {% endif %}
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
@@ -28,7 +28,7 @@
     <div class="row">
         <div class="col card mb-4 mt-3 left top">
             <div class="card-body">
-                <p class="card-text">{{ course.content | safe }}</p>
+                <div class="card-text">{{ course.content | safe }}</div>
             </div>
         </div>
     </div>
@@ -45,13 +45,11 @@
             <h3 class="mb-4">Comments:</h3>
             <div class="card-body">
                 {% for comment in comments %}
-                <div
-                    class="p-2 comments border-bottom {% if not comment.approved and comment.author == user %}faded{% elif not comment.approved %}d-none{% endif %}">
-                    <p class="font-weight-bold">{{ comment.author }} <span
-                            class="font-weight-normal">{{ comment.created_on }}</span> wrote:</p>
+                <div class="p-2 comments border-bottom {% if not comment.approved and comment.author == user %}faded{% elif not comment.approved %}d-none{% endif %}">
+                    <div class="font-weight-bold">{{ comment.author }}<span class="font-weight-normal">{{ comment.created_on }}</span>wrote:</div>
                     <div id="comment{{ comment.id }}">{{ comment.body | linebreaks }}</div>
-                    {% if not comment.approved and comment.author == user %}<p class="approval">This comment is awaiting
-                        approval</p>{% endif %}
+                    {% if not comment.approved and comment.author == user %}
+                    <div class="approval">This comment is awaiting approval</div>{% endif %}
                     {% if user.is_authenticated and comment.author == user %}
                     <button class="btn btn-delete" comment_id="{{ comment.id }}">Delete</button>
                     <button class="btn btn-edit" comment_id="{{ comment.id }}">Edit</button>
@@ -65,14 +63,14 @@
             <div class="card-body">
                 {% if user.is_authenticated %}
                 <h3 class="mb-4">Leave a comment:</h3>
-                <p>Posting as: {{ user.username }}</p>
+                <div>Posting as: {{ user.username }}</div>
                 <form id="commentForm" method="post" style="margin-top: 1.3em;">
                     {{ comment_form | crispy }}
                     {% csrf_token %}
                     <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
                 </form>
                 {% else %}
-                <p>Log in to leave a comment</p>
+                <div>Log in to leave a comment</div>
                 {% endif %}
             </div>
         </div>
