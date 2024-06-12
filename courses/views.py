@@ -13,6 +13,7 @@ class CourseList(generic.ListView):
     template_name = "courses/index.html"
     paginate_by = 6
 
+
 def comment_edit(request, slug, comment_id):
     """
     view to edit comments
@@ -35,6 +36,7 @@ def comment_edit(request, slug, comment_id):
 
     return HttpResponseRedirect(reverse('course_detail', args=[slug]))
 
+
 def comment_delete(request, slug, comment_id):
     """
     view to delete comment
@@ -50,6 +52,7 @@ def comment_delete(request, slug, comment_id):
         messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
 
     return HttpResponseRedirect(reverse('course_detail', args=[slug]))    
+
 
 def course_detail(request, slug):
     queryset = Course.objects.filter(status=1)
@@ -78,7 +81,8 @@ def course_detail(request, slug):
             "comment_form": comment_form,
         },
     )
-    
+
+
 def search_results(request):
     """
     View function for displaying search results based on user query.
@@ -130,6 +134,53 @@ def add_course(request):
     template = 'courses/add_course.html'
     context = {
         'form': form,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def edit_course(request, slug):
+    """ Edit a course on the website """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only superusers can do that.')
+        return redirect(reverse('course_detail', args=[course.slug]))
+
+    course = get_object_or_404(Course, slug=slug)
+    if request.method == 'POST':
+        form = CourseForm(request.POST, request.FILES, instance=course)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated course!')
+            return redirect(reverse('course_detail', args=[course.slug]))
+        else:
+            messages.error(request, 'Failed to update course. Please ensure the form is valid.')
+    else:
+        form = CourseForm(instance=course)
+    template = 'courses/edit_course.html'
+    context = {
+        'form': form,
+        'course': course,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def delete_course(request, slug):
+    """ Delete a course from the website """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only superusers can do that.')
+        return redirect(reverse('course_detail', args=[course.slug]))
+
+    course = get_object_or_404(Course, slug=slug)
+    if request.method == 'POST':
+        course.delete()
+        messages.success(request, 'Successfully deleted course!')
+        return redirect(reverse('home'))
+    template = 'courses/delete_course.html'
+    context = {
+        'course': course,
     }
 
     return render(request, template, context)

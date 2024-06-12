@@ -2,6 +2,7 @@
 
 {% url 'home' as home_url %}
 {% url 'about' as about_url %}
+{% url 'add_course' as add_course_url %}
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
@@ -62,17 +63,17 @@
                     {% if user.is_authenticated %}
                     <li class="nav-item d-flex align-items-center">
                         <strong class="nav-link text-white">You are logged in as {{ user.username }}</strong>
-                        <a class="nav-link" href="{% url 'account_logout' %}"><strong>Logout</strong></a>
+                        <a class="nav-link {% if request.path == logout_url %}active{% endif %}" href="{% url 'account_logout' %}"><strong>Logout</strong></a>
                         {% if user.is_superuser %}
-                        <a class="nav-link" href="{% url 'add_course' %}"><strong>Add Course</strong></a>
+                        <a class="nav-link {% if request.path == add_course_url %}active{% endif %}" href="{% url 'add_course' %}"><strong>Add Course</strong></a>
                         {% endif %}
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_login' %}"><strong>Login</strong></a>
+                        <a class="nav-link {% if request.path == login_url %}active{% endif %}" href="{% url 'account_login' %}"><strong>Login</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_signup' %}"><strong>Register</strong></a>
+                        <a class="nav-link {% if request.path == signup_url %}active{% endif %}" href="{% url 'account_signup' %}"><strong>Register</strong></a>
                     </li>
                     {% endif %}
                 </ul>
