@@ -25,10 +25,11 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-xozanaykut-project4-cimyq6mphm4.ws-eu108.gitpod.io','.herokuapp.com','.gitpod.io']
 
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # Application definition
 
@@ -109,7 +110,6 @@ DATABASES = {
 
 if 'test' in sys.argv:
     DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
-SECRET_KEY = os.environ.get("SECRET_KEY")
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.gitpod.io",

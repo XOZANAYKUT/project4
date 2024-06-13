@@ -39,12 +39,15 @@ ____
 ### Managing Courses:
 
 - As an administrator, I should be able to view all courses on the platform, edit them if necessary, and delete unwanted courses.
+
 ### Approving and Managing Comments:
 
 - As an administrator, I should be able to approve, edit, and remove comments left by users on courses.
+
 ### Managing User Accounts:
 
 - As an administrator, I should be able to view user accounts on the platform, edit them if necessary, and take actions such as banning users if required. This is important for maintaining the security and integrity of the platform.
+
 ### Editing and Deleting Courses:
 
 - As a user, I should be able to edit and delete the courses I have created. This should allow me to update the content, title, duration, or featured image of a course.
@@ -77,6 +80,7 @@ ____
 ____
 ![aboutus](docs/images/about3.png)
 ____
+
  ### The Footer
  - The footer section of Culinary Academy's website features links to its relevant social media platforms, allowing users to easily connect and stay updated. These links are designed to open in a new tab, ensuring seamless navigation for the users. 
  - Additionally, the footer provides essential information such as the academy's working hours, enabling visitors to plan their interactions accordingly. 

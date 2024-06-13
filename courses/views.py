@@ -142,11 +142,13 @@ def add_course(request):
 @login_required
 def edit_course(request, slug):
     """ Edit a course on the website """
+    course = get_object_or_404(Course, slug=slug)
+
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only superusers can do that.')
         return redirect(reverse('course_detail', args=[course.slug]))
 
-    course = get_object_or_404(Course, slug=slug)
+
     if request.method == 'POST':
         form = CourseForm(request.POST, request.FILES, instance=course)
         if form.is_valid():
@@ -169,11 +171,13 @@ def edit_course(request, slug):
 @login_required
 def delete_course(request, slug):
     """ Delete a course from the website """
+
+    course = get_object_or_404(Course, slug=slug)
+
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only superusers can do that.')
         return redirect(reverse('course_detail', args=[course.slug]))
 
-    course = get_object_or_404(Course, slug=slug)
     if request.method == 'POST':
         course.delete()
         messages.success(request, 'Successfully deleted course!')
