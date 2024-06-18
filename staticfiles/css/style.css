@@ -128,16 +128,17 @@ body {
     border-radius: 0.5rem;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+form .btn-signup:hover,
+form .btn-signup:active {
+    background-color: #005f5f;
+    color: white !important;
+}
+
 .btn-edit:hover,
 .btn-edit:active {
-    background-color: #abf009;
+    background-color: #33ec1a;
 }  
-
-.btn-signup:hover,
-.btn-signup:active {
-    background-color: #fff;
-    color: #005f5f;
-}
 
 .link {
     color: #171f63;
@@ -158,8 +159,8 @@ body {
 }
 
 .btn-delete {
-    color: #fff;
     background: #e84610;
+    color: white;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -168,7 +169,8 @@ body {
 
 .btn-delete:hover,
 .btn-delete:active {
-    background: #ff0000;
+    background: #bf0f0f;
+    color: white;
 }
 
 /* Miscellaneous Styles */
@@ -187,6 +189,12 @@ body {
     color: #a807ff !important;
    
 }
+
+.navbar-nav .nav-item.d-flex {
+    display: flex;
+    align-items: center;
+}
+
 /* Title Style */
 .title-container {
     text-align: center;
