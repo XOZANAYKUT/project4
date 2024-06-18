@@ -34,7 +34,7 @@
     <div class="row">
         <div class="col card mb-4 mt-3 left top">
             <div class="card-body">
-                <div class="card-text">{{ course.content | safe }}</div>
+                <div class="card-text">{{ course.content | linebreaks | safe }}</div>
             </div>
         </div>
     </div>

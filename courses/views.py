@@ -18,14 +18,23 @@ def comment_edit(request, slug, comment_id):
     """
     view to edit comments
     """
-    if request.method == "POST":
+    if not request.user.is_authenticated:
+        messages.error(request, 'You need to log in to edit comments.')
+        return redirect('account_login')
 
-        queryset = Course.objects.filter(status=1)
-        course = get_object_or_404(queryset, slug=slug)
-        comment = get_object_or_404(Comment, pk=comment_id)
+    queryset = Course.objects.filter(status=1)
+    course = get_object_or_404(queryset, slug=slug)
+    comment = get_object_or_404(Comment, pk=comment_id)
+    comment_form = CommentForm(data=request.POST, instance=comment)
+
+    if comment.author != request.user:
+        messages.add_message(request, messages.ERROR, 'You can only edit your own comments!')
+        return HttpResponseRedirect(reverse('course_detail', args=[slug]))
+
+    if request.method == "POST":
         comment_form = CommentForm(data=request.POST, instance=comment)
 
-        if comment_form.is_valid() and comment.author == request.user:
+        if comment_form.is_valid():
             comment = comment_form.save(commit=False)
             comment.course = course
             comment.approved = False
@@ -39,8 +48,13 @@ def comment_edit(request, slug, comment_id):
 
 def comment_delete(request, slug, comment_id):
     """
-    view to delete comment
+    View to delete comment
     """
+
+    if not request.user.is_authenticated:
+        messages.error(request, 'You need to log in to delete comments.')
+        return redirect('account_login')
+
     queryset = Course.objects.filter(status=1)
     course = get_object_or_404(queryset, slug=slug)
     comment = get_object_or_404(Comment, pk=comment_id)
@@ -113,12 +127,11 @@ def search_results(request):
     return render(request, 'courses/search_results.html', {'courses': courses})
 
 
-@login_required
 def add_course(request):
     """ Add a course to the website """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only superusers can do that.')
-        return redirect(reverse('home'))
+        messages.error(request, 'Sorry, only superusers can add courses.')
+        return redirect(reverse('account_login'))
 
     if request.method == 'POST':
         form = CourseForm(request.POST, request.FILES)
@@ -139,15 +152,13 @@ def add_course(request):
     return render(request, template, context)
 
 
-@login_required
 def edit_course(request, slug):
     """ Edit a course on the website """
     course = get_object_or_404(Course, slug=slug)
 
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only superusers can do that.')
+        messages.error(request, 'Sorry, only superusers can edit courses.')
         return redirect(reverse('course_detail', args=[course.slug]))
-
 
     if request.method == 'POST':
         form = CourseForm(request.POST, request.FILES, instance=course)
@@ -168,14 +179,13 @@ def edit_course(request, slug):
     return render(request, template, context)
 
 
-@login_required
 def delete_course(request, slug):
     """ Delete a course from the website """
 
     course = get_object_or_404(Course, slug=slug)
 
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only superusers can do that.')
+        messages.error(request, 'Sorry, only superusers can delete courses.')
         return redirect(reverse('course_detail', args=[course.slug]))
 
     if request.method == 'POST':
