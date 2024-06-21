@@ -108,6 +108,20 @@ ___
 
 ![Login](docs/images/login.png)
 ____
+### Add Course
+- 
+
+![Add Course]()
+____
+### Edit Course
+- 
+
+![Edit Course]()
+____
+### Delete Course
+- 
+
+![Delete Course]()
 
 ## Features Left to Implement
 - To integrate a calendar for booking calls
