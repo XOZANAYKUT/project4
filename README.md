@@ -62,7 +62,7 @@ ____
 
 - This section will allow the user to easily navigate from page to page on all devices without having to go back to the previous page via the 'back' button.
 
-![nav](docs/images/nav.png)
+![nav](docs/images/nav1.png)
 ____
 ## The Landing Page Image
 - The homepage of Culinary Academy features basic course information along with images highlighting the company's areas of expertise. When a user clicks on a course URL, they are directed to a page providing detailed information about the course. Additionally, on this page, users can add and delete comments about the course, allowing for interactive engagement. 
@@ -109,19 +109,23 @@ ___
 ![Login](docs/images/login.png)
 ____
 ### Add Course
-- 
+After logging in, the administrator can browse, add courses on the site.
+____
+![Add Course](docs/images/add.png)
 
-![Add Course]()
+![Add Course](docs/images/add2.png)
 ____
 ### Edit Course
-- 
-
-![Edit Course]()
+After logging in, the administrator can browse, edit courses on the site.
+____
+![Edit Course](docs/images/edit.png)
+![Edit Course](docs/images/edit2.png)
 ____
 ### Delete Course
-- 
-
-![Delete Course]()
+____
+After logging in, the administrator can browse, delete courses on the site.
+____
+![Delete Course](docs/images/delete.png)
 
 ## Features Left to Implement
 - To integrate a calendar for booking calls
@@ -248,7 +252,7 @@ ____
 - HTML: No errors were found when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fprojectfour-1535055a6d4c.herokuapp.com%2F)
  - CSS: No errors found when passing through the official [(Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fprojectfour-1535055a6d4c.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
  
- ![testing](docs/images/testing.png) 
+ ![testing](docs/images/output.png) 
  ## Javascript
 - No errors found when passing through the official [jshint ](https://jshint.com/)
 ____
