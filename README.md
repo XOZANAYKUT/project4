@@ -109,21 +109,21 @@ ___
 ![Login](docs/images/login.png)
 ____
 ### Add Course
-After logging in, the administrator can browse, add courses on the site.
+After logging in, the administrator can add courses on the site.
 ____
 ![Add Course](docs/images/add.png)
 
 ![Add Course](docs/images/add2.png)
 ____
 ### Edit Course
-After logging in, the administrator can browse, edit courses on the site.
+After logging in, the administrator can edit courses on the site.
 ____
 ![Edit Course](docs/images/edit.png)
 ![Edit Course](docs/images/edit2.png)
 ____
 ### Delete Course
 ____
-After logging in, the administrator can browse, delete courses on the site.
+After logging in, the administrator can delete courses on the site.
 ____
 ![Delete Course](docs/images/delete.png)
 
@@ -151,9 +151,6 @@ ____
 ____
 
 ### Search page performance
-
-![Search](docs/images/search.png)
-____
 ![Search](docs/images/src.png)
 ____
 
